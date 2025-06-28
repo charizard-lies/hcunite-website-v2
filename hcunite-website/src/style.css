@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Poppins:wght@400;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-inter: 'Inter';
+  --font-poppins: 'Poppins';
+  --color-hwachred: #CE2222;
+  --color-hwachred-dark: #6D1212;
+}
