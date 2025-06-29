@@ -9,10 +9,10 @@ const menuItems = [
   { label: 'CCAS', to: '/Council52' },
   { 
     label: 'STUDENTS\' COUNCIL',
-    to: '/',
+    to: '/Council52',
     subitems: [
       {label: '52nd HCSC', to: '/Council52'},
-      {label: '51st HCSC', to: '/'},
+      {label: '51st HCSC', to: '/Council52'},
     ]
   },
   {
@@ -44,11 +44,11 @@ const handleClose = () => {
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <nav class="w-full fixed py-5 bg-black">
+    <nav class="w-full fixed py-5 px-7 z-50">
       <!-- inner box -->
-      <div class="w-[95%] bg-white flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
+      <div class="w-full bg-white flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
         <!-- logo -->
-        <div class="text-2xl font-inter font-black lg:text-4xl">HCUNITE</div>
+        <div class="text-2xl font-inter font-black lg:text-4xl text-hwachred">HCUNITE</div>
         <!-- headers -->
         <div class="hidden lg:flex max-w-[80%] gap-5 xl:gap-10 justify-between">
           <DropdownMenu v-for="(item, key) in menuItems" :key="key" :item="item"/>
