@@ -7,8 +7,8 @@ import Home from './pages/Home.vue'
 import Council52 from './pages/Council52.vue'
 
 const routes = [
-  { path: '/', component: Home},
-  { path: '/Council52', component: Council52}
+    { path: '/', component: Home},
+    { path: '/Council52', component: Council52},
 ]
 
 const router = createRouter({

@@ -6,28 +6,30 @@ import MenuItem from './components/MenuItem.vue'
 const mobileMenuOpen = ref(false);
 const activeIndex = ref(null)
 const menuItems = [
-  { label: 'CCAS', to: '/Council52' },
+  { label: 'CCAS', external: true, to: 'https://google.com' },
   { 
     label: 'STUDENTS\' COUNCIL',
+    external: false,
     to: '/Council52',
     subitems: [
-      {label: '52nd HCSC', to: '/Council52'},
-      {label: '51st HCSC', to: '/Council52'},
+      {label: '52nd HCSC', external: false, to: '/Council52'},
+      {label: '51st HCSC', external: false, to: '/Council52'},
     ]
   },
   {
     label: 'FACULTIES',
+    external: false,
     to: '/Council52',
     subitems: [
-      {label: 'Apollo', to: '/'},
-      {label: 'Ares', to: '/'},
-      {label: 'Artemis', to: '/'},
-      {label: 'Athena', to: '/'},
+      {label: 'Apollo', external: false, to: '/'},
+      {label: 'Ares', external: false, to: '/'},
+      {label: 'Artemis', external: false, to: '/'},
+      {label: 'Athena', external: false, to: '/'},
     ]
   },
-  { label: 'SODACHE', to: '/'  },
-  { label: 'ELECTIONS', to: '/'  },
-  { label: 'IMPORTANT LINKS', to: '/'  }
+  { label: 'SODACHE', external: false, to: '/'  },
+  { label: 'ELECTIONS', external: false, to: '/'  },
+  { label: 'IMPORTANT LINKS', external: false, to: '/'  }
 ]
 
 const handleToggle = (index) => {
@@ -46,9 +48,9 @@ const handleClose = () => {
   <div class="min-h-screen flex flex-col">
     <nav class="w-full fixed py-5 px-7 z-50">
       <!-- inner box -->
-      <div class="w-full bg-white flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
+      <div class="w-full bg-white flex flex-row justify-between m-auto px-5 py-3 rounded-xl shadow-md">
         <!-- logo -->
-        <div class="text-2xl font-inter font-black lg:text-4xl text-hwachred">HCUNITE</div>
+        <div class="text-2xl font-inter font-black lg:text-4xl text-hwachred hover:text-amber-500 transition-colors duration-300"><router-link to="/">HCUNITE</router-link></div>
         <!-- headers -->
         <div class="hidden lg:flex max-w-[80%] gap-5 xl:gap-10 justify-between">
           <DropdownMenu v-for="(item, key) in menuItems" :key="key" :item="item"/>
@@ -85,11 +87,11 @@ const handleClose = () => {
       <router-view />
     </main>
 
-    <footer class="w-full px-10 py-10 bg-hwachred text-white text-inter rounded-t-xl text-center">
-      <div class="font-semibold text-md lg:text-xl">
+    <footer class="mx-3 mb-3 px-10 py-10 bg-hwachred text-white text-inter rounded-xl text-center">
+      <div class="font-semibold text-md lg:text-xl my-3">
         CHECK OUT OUR OTHER PLATFORMS FOR MORE
       </div>
-      <div class="flex flex-row justify-center">
+      <div class="flex flex-row justify-center my-3">
         <a href="https://www.instagram.com/hcunite/">
           <svg class="text-white fill-current h-[70px] w-[70px] p-3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
@@ -119,7 +121,7 @@ const handleClose = () => {
           </svg>
         </a>
       </div>
-      <div class="text-xs">
+      <div class="text-xs my-3">
         CREDIT: STUDIO ARDENT FOR RELEVANT IMAGES
       </div>
     </footer>
