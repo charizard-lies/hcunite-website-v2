@@ -14,18 +14,14 @@
 <template>
     <!-- hero section -->
      <section class="w-full h-screen flex flex-col">
-        
-        <!-- hero section -->
-        <div class="w-full grow p-3">
             <!-- hero widget -->
-             <div class="w-full h-full overflow-hidden rounded-xl relative">
+             <div class="w-full h-full overflow-hidden relative">
                 <router-link to="/Council52">
                     <img src="../assets/informal_council_pic.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
 
-                    <h1 class="p-6 absolute bottom-0 z-20 font-inter font-black text-white text-5xl md:text-7xl lg:text-9xl ">HWA CHONG STUDENTS' COUNCIL</h1>
+                    <h1 class="p-12 absolute bottom-0 z-20 font-inter font-black text-white text-5xl md:text-7xl lg:text-9xl">HWA CHONG STUDENTS' COUNCIL</h1>
                 </router-link>
              </div>
-        </div>
      </section>
 
     <!-- why were here section -->

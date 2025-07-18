@@ -87,7 +87,7 @@ const handleClose = () => {
       <router-view />
     </main>
 
-    <footer class="mx-3 mb-3 px-10 py-10 bg-hwachred text-white text-inter rounded-xl text-center">
+    <footer class="px-10 py-10 bg-hwachred text-white text-inter text-center">
       <div class="font-semibold text-md lg:text-xl my-3">
         CHECK OUT OUR OTHER PLATFORMS FOR MORE
       </div>
