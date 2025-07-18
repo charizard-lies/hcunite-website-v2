@@ -5,10 +5,14 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from './pages/Home.vue'
 import Council52 from './pages/Council52.vue'
+import Faculties from "./pages/Faculties.vue"
+import Apollo from "./pages/Apollo.vue"
 
 const routes = [
     { path: '/', component: Home},
-    { path: '/Council52', component: Council52},
+    { path: '/council52', component: Council52},
+    { path: '/faculties', component: Faculties},
+    { path: '/apollo', component: Apollo},
 ]
 
 const router = createRouter({

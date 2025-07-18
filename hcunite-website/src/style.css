@@ -7,3 +7,11 @@
   --color-hwachred: #CE2222;
   --color-hwachred-dark: #6D1212;
 }
+
+.custom-cursor-eye-open {
+  cursor: url('/eye-open-large.png') 24 24, auto;
+}
+
+.custom-cursor-eye-close {
+  cursor: url('/eye-close-large.png') 24 24, auto;
+}

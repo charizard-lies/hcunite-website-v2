@@ -3,11 +3,10 @@
 <template>
 
 <!-- hero section -->
-    <section class="pb-12">
+    <section class="pt-20 pb-12">
+        <h1 class="p-6 z-20 font-inter font-black text-black text-5xl md:text-7xl lg:text-8xl w-full text-center">52ND STUDENTS' COUNCIL</h1>
         <div class="w-full h-screen relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
-
-            <h1 class="p-6 absolute bottom-0 z-20 font-inter font-black text-white text-5xl md:text-7xl lg:text-9xl ">52ND STUDENTS' COUNCIL</h1>
         </div>
         <div class="p-6">
             <p class="max-w-[700px] mx-auto font-poppins text-xs md:text-base">

@@ -10,18 +10,18 @@ const menuItems = [
   { 
     label: 'STUDENTS\' COUNCIL',
     external: false,
-    to: '/Council52',
+    to: '/council52',
     subitems: [
-      {label: '52nd HCSC', external: false, to: '/Council52'},
-      {label: '51st HCSC', external: false, to: '/Council52'},
+      {label: '52nd HCSC', external: false, to: '/council52'},
+      {label: '51st HCSC', external: false, to: '/council52'},
     ]
   },
   {
     label: 'FACULTIES',
     external: false,
-    to: '/Council52',
+    to: '/faculties',
     subitems: [
-      {label: 'Apollo', external: false, to: '/'},
+      {label: 'Apollo', external: false, to: '/apollo'},
       {label: 'Ares', external: false, to: '/'},
       {label: 'Artemis', external: false, to: '/'},
       {label: 'Athena', external: false, to: '/'},
