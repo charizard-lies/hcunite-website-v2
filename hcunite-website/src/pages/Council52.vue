@@ -3,8 +3,8 @@
 <template>
 
 <!-- hero section -->
-    <section class="pt-20 pb-12">
-        <h1 class="p-6 z-20 font-inter font-black text-black text-5xl md:text-7xl lg:text-8xl w-full text-center">52ND STUDENTS' COUNCIL</h1>
+    <section class="mt-30 pb-12">
+        <h1 class="z-20 font-inter font-black text-black text-5xl md:text-7xl lg:text-8xl w-full text-center">52ND STUDENTS' COUNCIL</h1>
         <div class="w-full h-screen relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
         </div>
@@ -12,25 +12,25 @@
             <p class="max-w-[700px] mx-auto font-poppins text-xs md:text-base">
                 (FROM LEFT TO RIGHT)
                 <br><br>Front Row:
-                <br><br>Mr Ang Yong Qin (Teacher Advisor); Mrs Raj-Priyahlatha Nainar (Teacher Advisor); Ms Chan Hui Chieh (Teacher Advisor); Dr Lim Hong Seng Melvyn (Deputy Principal / Student Development (College)); Hor Sze Jia; Mr Lee Peck Ping (Principal); Seah Jin Rong; Mr Chan Kwok Leon (Deputy Principal / Studies (College)); Mrs Sim-Lim Siew Hui (Principal Consultant / Student Development); Ms Ying Min (Teacher Advisor); Dr Sin Yee Theng (Teacher Advisor)
+                <br>Mr Ang Yong Qin (Teacher Advisor); Mrs Raj-Priyahlatha Nainar (Teacher Advisor); Ms Chan Hui Chieh (Teacher Advisor); Dr Lim Hong Seng Melvyn (Deputy Principal / Student Development (College)); Hor Sze Jia; Mr Lee Peck Ping (Principal); Seah Jin Rong; Mr Chan Kwok Leon (Deputy Principal / Studies (College)); Mrs Sim-Lim Siew Hui (Principal Consultant / Student Development); Ms Ying Min (Teacher Advisor); Dr Sin Yee Theng (Teacher Advisor)
                 <br><br>Second Row: 
-                <br><br>Tan Weiyan Ruson; Koh Wei En Ezekiel; Dan Ming Zhen; Toh Cheung See; Mock Yee Ken Ethan; Tan Jin Yi; Lai Sin Yie; Lee Wei Yi; Foo Ying Han; Tan Yu Ming; Sun Peiyan; Mao Tianze; Leow Junn Kai Jonathan; Chua Ying Feng Daryl
+                <br>Tan Weiyan Ruson; Koh Wei En Ezekiel; Dan Ming Zhen; Toh Cheung See; Mock Yee Ken Ethan; Tan Jin Yi; Lai Sin Yie; Lee Wei Yi; Foo Ying Han; Tan Yu Ming; Sun Peiyan; Mao Tianze; Leow Junn Kai Jonathan; Chua Ying Feng Daryl
                 <br><br>Third Row:
-                <br><br>Low Shi Yang; Sonya Koh; Yue Jiayuan; Anya Wong Ann Ya; Xu Shaozhe; Toh Jun Hao; Joy Choo Le Xuan; Chen Linger; Sheng Yichou; Song Haoran; Chen Leqi; Wong Jun Heng; Ang Shao Xuan; Declan Ng Kian Heng
+                <br>Low Shi Yang; Sonya Koh; Yue Jiayuan; Anya Wong Ann Ya; Xu Shaozhe; Toh Jun Hao; Joy Choo Le Xuan; Chen Linger; Sheng Yichou; Song Haoran; Chen Leqi; Wong Jun Heng; Ang Shao Xuan; Declan Ng Kian Heng
                 <br><br>Fourth Row:
-                <br><br>Zhu Zixuan; Lim Jin Xin; Madeline Soo Qian Han; Raphael Toby Lauw; Ryan Lee Min-Xing; Travis Dael Ng Shao Jie; Koi Xin Yi Tricia; Chng Ming Cong Jerrell; Chia Hao Yang Kyle; Chen Hui En; Ng Kai Chi Abigail; Quek Ying Ying; Celeste Wong Xin Yi
+                <br>Zhu Zixuan; Lim Jin Xin; Madeline Soo Qian Han; Raphael Toby Lauw; Ryan Lee Min-Xing; Travis Dael Ng Shao Jie; Koi Xin Yi Tricia; Chng Ming Cong Jerrell; Chia Hao Yang Kyle; Chen Hui En; Ng Kai Chi Abigail; Quek Ying Ying; Celeste Wong Xin Yi
                 <br><br>Last Row:
-                <br><br>Alastair Chua Wei Jie; Cedric Tai Hong-E; Wui Jeongjun; Kayden Seah Chung Hian; Loh Si Wing Tara; Anthea Neo Rui En; Claris Poh
+                <br>Alastair Chua Wei Jie; Cedric Tai Hong-E; Wui Jeongjun; Kayden Seah Chung Hian; Loh Si Wing Tara; Anthea Neo Rui En; Claris Poh
             </p>
         </div>
     </section>
 
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-    <section class="w-full">
-        <div class="w-full py-15 px-[10%] lg:px-0 lg:w-[60%] lg:max-w-[900px] m-auto text-center font-poppins font-normal">
-            <h2 class="text-4xl lg:text-6xl">A message from the 52nd...</h2>
-            <p class="text-xs mt-6 lg:text-base">
+    <section class="w-full px-6">
+        <div class="w-full py-15 lg:px-0 max-w-[700px] m-auto text-justify font-poppins font-normal">
+            <h2 class="text-4xl lg:text-6xl text-center">A message from the 52nd...</h2>
+            <p class="text-xs mt-6 md:text-base ">
                 Hi everyone! We’re the 51st Hwa Chong Students’ Council (HCSC). 
                 As a passionate cohort of 50 Councillors who have received the mandate from our peers, to serve our school and more importantly, our student body. 
                 Our Council comprises the Non-Standing Executive Committee (NSE), Executive Committee (ExCo), Extended Council Attaché Committee (ECACo), 
@@ -52,10 +52,10 @@
     
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-    <section class="w-full">
-        <div class="w-full py-15 px-[10%] lg:px-0 lg:w-[60%] lg:max-w-[900px] m-auto text-center font-poppins font-normal">
+    <section class="w-full px-6">
+        <div class="w-full py-15 max-w-[700px] m-auto text-justify font-poppins font-normal">
             <h2 class="text-4xl lg:text-6xl">Our Committees</h2>
-            <p class="text-xs mt-6 lg:text-base">
+            <p class="text-xs mt-6 md:text-base">
                 The HCSC consists of the Executive Committee, the 5 Standing Committees (SC), and the 7 Working Committees (WC).
                 Headed by the Executive Committee (ExCo), the 5 SCs work together over their 2 Council Terms to best serve the students and their needs, in their differently unique aspects. 
                 <br><br>The 5 SCs consist of: the Extended Council Attaché Committee (ECACo), the Publications and Publicity Committee (PubCo), the Student Engagement and Culture Committee (SECCo), 
@@ -130,7 +130,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-left">
+        <div class="px-6 py-6 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 As the core body in the Executive Committee, the Non-Standing Executive Committee is responsible for 
                 steering the council direction, while pushing boundaries to lead the council to greater heights. 
@@ -144,7 +144,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -152,7 +152,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -160,7 +160,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -168,7 +168,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
             
@@ -188,7 +188,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-left">
+        <div class="px-6 py-6 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Extended Council Attaché Committee comprises the Councillors who serve as Presidents and Vice-Presidents 
                 to the Values-In-Action Council, Green Council and Students' National Education Council. 
@@ -204,7 +204,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -212,7 +212,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -220,7 +220,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -228,7 +228,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
             
@@ -247,7 +247,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-left">
+        <div class="px-6 py-6 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 Through the use of HCunite and the Council Board, the Publication and Publicity Committee 
                 publicises council events and initiatives, aiming to increase communication and transparency 
@@ -262,7 +262,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -270,7 +270,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -278,7 +278,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -286,7 +286,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
             
@@ -306,7 +306,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-left">
+        <div class="px-6 py-6 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 By forging common experiences, the Student Engagement and Culture committee aspires to be 
                 the champion of our school's culture and identity, fostering a strong sense of belonging to the school, 
@@ -322,7 +322,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -330,7 +330,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -338,7 +338,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -346,7 +346,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
             
@@ -365,7 +365,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-left">
+        <div class="px-6 py-6 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Social and Relations Committee seeks to be the eyes and ears of the council, 
                 championing grassroot efforts to connect with the student body on a deeper level. 
@@ -382,7 +382,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -390,7 +390,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -398,7 +398,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -406,7 +406,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
             
@@ -440,7 +440,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -448,7 +448,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -456,7 +456,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
 
@@ -464,7 +464,7 @@
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
                     <h2 class="text-2xl sm:text-3xl">Name</h2>
-                    <p class="text-xs sm:text-sm">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
+                    <p class="text-xs sm:text-sm text-justify">hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream.</p>
                 </div>
             </div>
             

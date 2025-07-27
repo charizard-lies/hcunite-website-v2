@@ -48,7 +48,7 @@ const handleClose = () => {
   <div class="min-h-screen flex flex-col">
     <nav class="w-full fixed py-5 px-7 z-50">
       <!-- inner box -->
-      <div class="w-full bg-white flex flex-row justify-between m-auto px-5 py-3 rounded-xl shadow-md">
+      <div class="w-full backdrop-blur-3xl backdrop-brightness-200 bg-[rgba(255,255,255,0.75)] border-1 border-[rgba(220,220,220,0.75)] flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
         <!-- logo -->
         <div class="text-2xl font-inter font-black lg:text-4xl text-hwachred hover:text-amber-500 transition-colors duration-300"><router-link to="/">HCUNITE</router-link></div>
         <!-- headers -->
