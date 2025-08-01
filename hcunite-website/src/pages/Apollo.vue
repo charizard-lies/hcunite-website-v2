@@ -88,10 +88,21 @@
   </section>
 
 
+  <div>
+    <Dropdown
+    header="Orientation"
+    headerClass=""
+    contentClass=""
+  >
+    <p>I love building interactive web apps with Vue and Tailwind!</p>
+    <p class="mt-2">This dropdown is fully customizable via props.</p>
+  </Dropdown>
+  </div>
 </template>
 
 <script setup>
 import groupPhoto from '../assets/test.jpeg'
+import Dropdown from '../components/Dropdown.vue'
 import { ref } from 'vue'
 
 const showOverlay = ref(true)
@@ -126,3 +137,25 @@ function toggleOverlay() {
   showOverlay.value = !showOverlay.value
 }
 </script>
+
+<style scoped>
+.submenu-slide-enter-active,
+.submenu-slide-leave-active {
+  transition: all 0.4s ease;
+  max-height: 500px; /* change if needed */
+}
+
+.submenu-slide-enter-from,
+.submenu-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+}
+
+.submenu-slide-enter-to,
+.submenu-slide-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 500px;
+}
+</style>
