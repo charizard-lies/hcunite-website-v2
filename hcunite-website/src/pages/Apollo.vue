@@ -21,7 +21,8 @@
         <div 
             class="absolute inset-0 bg-black transition-opacity duration-500" 
             :class="showOverlay ? 'opacity-50' : 'opacity-0'"
-        ></div>
+        >
+        </div>
 
         <div class="flex flex-col items-center justify-center h-screen w-full transition-all duration-500 text-white text-center opacity-0" 
           :class="{'backdrop-blur-xl opacity-100': showOverlay}"
@@ -89,7 +90,7 @@
 
 
   <section class="w-full py-12 px-4">
-    <div class="">
+    <div class="px-4 lg:px-12">
       <MultiCarousel></MultiCarousel>   
     </div>
   </section>
