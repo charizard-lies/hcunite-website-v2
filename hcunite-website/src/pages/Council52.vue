@@ -4,12 +4,12 @@
 
 <!-- hero section -->
     <section class="mt-30 pb-12">
-        <h1 class="z-20 font-inter font-black text-black text-5xl md:text-7xl lg:text-8xl w-full text-center">52ND STUDENTS' COUNCIL</h1>
+        <h1 class="z-20 text-black lg:text-8xl w-full text-center">52ND STUDENTS' COUNCIL</h1>
         <div class="w-full h-screen relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
         </div>
         <div class="p-6">
-            <p class="max-w-[700px] mx-auto font-poppins text-xs md:text-base">
+            <p class="centered-text-block">
                 (FROM LEFT TO RIGHT)
                 <br><br>Front Row:
                 <br>Mr Ang Yong Qin (Teacher Advisor); Mrs Raj-Priyahlatha Nainar (Teacher Advisor); Ms Chan Hui Chieh (Teacher Advisor); Dr Lim Hong Seng Melvyn (Deputy Principal / Student Development (College)); Hor Sze Jia; Mr Lee Peck Ping (Principal); Seah Jin Rong; Mr Chan Kwok Leon (Deputy Principal / Studies (College)); Mrs Sim-Lim Siew Hui (Principal Consultant / Student Development); Ms Ying Min (Teacher Advisor); Dr Sin Yee Theng (Teacher Advisor)
@@ -27,10 +27,10 @@
 
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-    <section class="w-full px-6">
-        <div class="w-full py-15 lg:px-0 max-w-[700px] m-auto text-justify font-poppins font-normal">
-            <h2 class="text-4xl lg:text-6xl text-center">A message from the 52nd...</h2>
-            <p class="text-xs mt-6 md:text-base ">
+    <section class="w-full py-15 px-6">
+        <div class="w-full">
+            <h2 class="!text-left centered-text-block">A message from the 52nd...</h2>
+            <p class="centered-text-block mt-6 ">
                 Hi everyone! We’re the 51st Hwa Chong Students’ Council (HCSC). 
                 As a passionate cohort of 50 Councillors who have received the mandate from our peers, to serve our school and more importantly, our student body. 
                 Our Council comprises the Non-Standing Executive Committee (NSE), Executive Committee (ExCo), Extended Council Attaché Committee (ECACo), 
@@ -52,10 +52,10 @@
     
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-    <section class="w-full px-6">
-        <div class="w-full py-15 max-w-[700px] m-auto text-justify font-poppins font-normal">
-            <h2 class="text-4xl lg:text-6xl">Our Committees</h2>
-            <p class="text-xs mt-6 md:text-base">
+    <section class="w-full py-15 px-6">
+        <div class="w-full">
+            <h2 class="centered-text-block">Our Committees</h2>
+            <p class="centered-text-block mt-6">
                 The HCSC consists of the Executive Committee, the 5 Standing Committees (SC), and the 7 Working Committees (WC).
                 Headed by the Executive Committee (ExCo), the 5 SCs work together over their 2 Council Terms to best serve the students and their needs, in their differently unique aspects. 
                 <br><br>The 5 SCs consist of: the Extended Council Attaché Committee (ECACo), the Publications and Publicity Committee (PubCo), the Student Engagement and Culture Committee (SECCo), 
@@ -69,57 +69,47 @@
 
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-    <section class="py-12 px-12">
-        <div class="flex flex-col gap-6">
-            <!-- row -->
-            <div class="flex flex-col gap-6 sm:flex-row flew-wrap justify-between">
+    <section class="py-12 px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
                     <img class="w-full grow object-cover" src="../assets/informal_council_pic.jpg" alt="">
-                    <h1 class="ml-6 text-4xl lg:text-5xl font-semibold">NSE</h1>
-                    <button @click="$refs.nse.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
+                    <h2 class="ml-6 font-semibold">NSE</h2>
+                    <button @click="$refs.nse.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:py-3 sm:max-w-[50%] md:max-w-[30%] lg:text-sm sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
                     <img class="w-full grow object-cover" src="../assets/informal_council_pic.jpg" alt="">
-                    <h1 class="ml-6 text-4xl lg:text-5xl font-semibold">ECACO</h1>
+                    <h2 class="ml-6 font-semibold">ECACO</h2>
                     <button @click="$refs.ecaco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
-            </div>
-
-            <!-- row -->
-            <div class="flex flex-col gap-6 sm:flex-row flew-wrap justify-between">
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
                     <img class="w-full grow object-cover" src="../assets/informal_council_pic.jpg" alt="">
-                    <h1 class="ml-6 text-4xl lg:text-5xl font-semibold">PUBCO</h1>
+                    <h2 class="ml-6 font-semibold">PUBCO</h2>
                     <button @click="$refs.pubco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
                     <img class="w-full grow object-cover" src="../assets/informal_council_pic.jpg" alt="">
-                    <h1 class="ml-6 text-4xl lg:text-5xl font-semibold">SECCO</h1>
+                    <h2 class="ml-6 font-semibold">SECCO</h2>
                     <button @click="$refs.secco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
-            </div>
-            
-            <!-- row -->
-            <div class="flex flex-col gap-6 sm:flex-row flew-wrap justify-between">
+                
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
                     <img class="w-full grow object-cover" src="../assets/informal_council_pic.jpg" alt="">
-                    <h1 class="ml-6 text-4xl lg:text-5xl font-semibold">SNR</h1>
+                    <h2 class="ml-6 font-semibold">SNR</h2>
                     <button @click="$refs.snr.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
                     <img class="w-full grow object-cover" src="../assets/informal_council_pic.jpg" alt="">
-                    <h1 class="ml-6 text-4xl lg:text-5xl font-semibold">WELCO</h1>
+                    <h2 class="ml-6 font-semibold">WELCO</h2>
                     <button @click="$refs.welco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
-            </div>
         </div>
     </section>
 
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
     <!-- nse -->
-    <section ref="nse" class="py-12 px-3 w-full">
-        <div class="w-full aspect-3/2 rounded-xl overflow-hidden relative">
+    <section ref="nse" class="pb-12 px-3">
+        <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-3xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/33">
                 THE NON-<br>
@@ -130,7 +120,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-justify md:text-justify">
+        <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 As the core body in the Executive Committee, the Non-Standing Executive Committee is responsible for 
                 steering the council direction, while pushing boundaries to lead the council to greater heights. 
@@ -139,7 +129,7 @@
             </p>
         </div>
 
-        <div class="px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
             <div>
                 <img src="../assets/informal_council_pic.jpg" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
                 <div class="p-3 sm:p-6 w-full m-auto font-poppins">
@@ -176,8 +166,8 @@
     </section>
 
     <!-- ecaco -->
-    <section ref="ecaco" class="py-12 px-3 w-full">
-        <div class="w-full aspect-3/2 rounded-xl overflow-hidden relative">
+    <section ref="ecaco" class="pb-12 px-3">
+        <div class="aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.3em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/25">
                 THE EXTENDED-<br>
@@ -188,7 +178,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-justify md:text-justify">
+        <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Extended Council Attaché Committee comprises the Councillors who serve as Presidents and Vice-Presidents 
                 to the Values-In-Action Council, Green Council and Students' National Education Council. 
@@ -236,8 +226,8 @@
     </section>
 
     <!-- pubco -->
-    <section ref="pubco" class="py-12 px-3 w-full">
-        <div class="w-full aspect-3/2 rounded-xl overflow-hidden relative">
+    <section ref="pubco" class="pb-12 px-3 ">
+        <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.4em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.2em] lg:text-8xl/25">
                 THE PUBLICATIONS<br>
@@ -247,7 +237,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-justify md:text-justify">
+        <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 Through the use of HCunite and the Council Board, the Publication and Publicity Committee 
                 publicises council events and initiatives, aiming to increase communication and transparency 
@@ -294,8 +284,8 @@
     </section>
 
     <!-- secco -->
-    <section ref="secco" class="py-12 px-3 w-full">
-        <div class="w-full aspect-3/2 rounded-xl overflow-hidden relative">
+    <section ref="secco" class="pb-12 px-3 ">
+        <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE STUDENT<br>
@@ -306,7 +296,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-justify">
+        <div class="px-6 py-12 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 By forging common experiences, the Student Engagement and Culture committee aspires to be 
                 the champion of our school's culture and identity, fostering a strong sense of belonging to the school, 
@@ -354,8 +344,8 @@
     </section>
 
     <!-- snr -->
-    <section ref="snr" class="py-12 px-3 w-full">
-        <div class="w-full aspect-3/2 rounded-xl overflow-hidden relative">
+    <section ref="snr" class="pb-12 px-3 ">
+        <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE SOCIAL<br>
@@ -365,7 +355,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-justify">
+        <div class="px-6 py-12 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Social and Relations Committee seeks to be the eyes and ears of the council, 
                 championing grassroot efforts to connect with the student body on a deeper level. 
@@ -414,8 +404,8 @@
     </section>
 
     <!-- welco -->
-    <section ref="welco" class="py-12 px-3 w-full">
-        <div class="w-full aspect-3/2 rounded-xl overflow-hidden relative">
+    <section ref="welco" class="pb-12 px-3 ">
+        <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/20 lg:tracking-[0.4em] lg:text-8xl/40">
                 THE WELFARE<br>
@@ -424,7 +414,7 @@
             </h1>
         </div>
 
-        <div class="px-6 py-6 text-center md:text-left">
+        <div class="px-6 py-12 text-center md:text-left">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Welfare Committee champions the welfare of the student population with heart and dedication. 
                 The committee strives to promote the well being of the student population for a conducive learning environment for all HwaChongians. 

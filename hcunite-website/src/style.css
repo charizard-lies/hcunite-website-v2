@@ -12,10 +12,29 @@
   --color-athena:#027b3e;
 }
 
+@layer base {
+  h1 {
+    @apply font-inter font-black text-5xl md:text-7xl lg:text-9xl
+  }
+  h2 {
+    @apply text-4xl lg:text-6xl font-poppins
+  }
+  h3{
+    @apply text-3xl lg:text-4xl font-poppins
+  }
+  p{
+    @apply font-poppins text-xs md:text-base
+  }
+}
+
 .custom-cursor-eye-open {
   cursor: url('/eye-open-large.png') 24 24, auto;
 }
 
 .custom-cursor-eye-close {
   cursor: url('/eye-close-large.png') 24 24, auto;
+}
+
+.centered-text-block{
+  @apply mx-auto max-w-[700px] text-justify
 }

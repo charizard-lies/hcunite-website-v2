@@ -57,7 +57,7 @@
   </section>
 
   <section class="p-12">
-    <p class="max-w-[700px] mx-auto font-poppins text-xs md:text-base">
+    <p>
       (FROM LEFT TO RIGHT)
       <br><br>First Row: 
       <br>Toh Jun Hao; Chen Leqi
@@ -70,7 +70,7 @@
 
   <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-  <section class=" text-justify p-12">
+  <section class="text-justify p-12">
     <img src="../assets/informal_council_pic.jpg" alt="" class="aspect-square max-w-[700px] w-full m-auto rounded-xl object-cover">
     <h2 class="mt-12 text-4xl md:text-7xl font-poppins text-center">The Bull</h2>
     <p class="max-w-[700px] mt-6 mx-auto font-poppins">
@@ -88,21 +88,17 @@
   </section>
 
 
-  <div>
-    <Dropdown
-    header="Orientation"
-    headerClass=""
-    contentClass=""
-  >
-    <p>I love building interactive web apps with Vue and Tailwind!</p>
-    <p class="mt-2">This dropdown is fully customizable via props.</p>
-  </Dropdown>
-  </div>
+  <section class="w-full py-12 px-4">
+    <div class="">
+      <MultiCarousel></MultiCarousel>   
+    </div>
+  </section>
 </template>
 
 <script setup>
 import groupPhoto from '../assets/test.jpeg'
 import Dropdown from '../components/Dropdown.vue'
+import MultiCarousel from '../components/Multicarousel.vue'
 import { ref } from 'vue'
 
 const showOverlay = ref(true)
@@ -137,25 +133,3 @@ function toggleOverlay() {
   showOverlay.value = !showOverlay.value
 }
 </script>
-
-<style scoped>
-.submenu-slide-enter-active,
-.submenu-slide-leave-active {
-  transition: all 0.4s ease;
-  max-height: 500px; /* change if needed */
-}
-
-.submenu-slide-enter-from,
-.submenu-slide-leave-to {
-  opacity: 0;
-  transform: translateY(-8px);
-  max-height: 0;
-}
-
-.submenu-slide-enter-to,
-.submenu-slide-leave-from {
-  opacity: 1;
-  transform: translateY(0);
-  max-height: 500px;
-}
-</style>

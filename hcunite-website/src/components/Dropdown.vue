@@ -10,13 +10,17 @@ const props = defineProps({
     type: String,
     default: 'w-full mx-auto'
   },
+  textContainerClass: {
+    type: String,
+    default: 'flex flex-row flex-nowrap justify-between px-8 py-8 cursor-pointer font-poppins'
+  },
   headerClass: {
     type: String,
-    default: 'bg-blue-500 text-white px-4 py-2 cursor-pointer'
+    default: ''
   },
   contentClass: {
     type: String,
-    default: 'bg-gray-100 px-4 py-2'
+    default: 'bg-gray-50 px-4 py-8'
   }
 })
 
@@ -48,12 +52,13 @@ watchEffect(() => {
 
 <template>
   <div :class="containerClass">
-    <div
-      :class="headerClass"
-      @click="toggle"
-    >
-      {{ header }}
+    <div :class="textContainerClass" @click="toggle">
+        <h3 :class="headerClass">
+        {{ header }}
+        </h3>
+        <h3  :class="{ 'rotate-180': isOpen }" class=" text-4xl my-auto transition-transform duration-500">▼</h3>
     </div>
+    <div class="h-px w-full bg-hwachred m-auto"></div>
     <div
       ref="content"
       class="overflow-hidden transition-[max-height] duration-500 ease-in-out"

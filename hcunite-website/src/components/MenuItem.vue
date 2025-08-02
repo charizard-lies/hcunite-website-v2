@@ -7,16 +7,15 @@
       </component>
 
       <!-- arrow -->
-      <span v-if="item.subitems" class="ml-2 text-xl">
-        <span :class="{ 'rotate-180': isActive }" class="transition-transform">▼</span>
+      <span v-if="item.subitems" class="ml-2 text-xl transition-transform " :class="{ 'rotate-180': isActive }">
+        ▼
       </span>
     </div>
 
     <!-- list -->
     <transition name="submenu-slide">
-      <ul v-show="item.subitems && isActive" class="ml-4 mt-2 space-y-2 overflow-hidden">
+      <ul v-if="item.subitems && isActive" class="ml-4 mt-2 space-y-2 overflow-hidden">
         <li v-for="(sub, i) in item.subitems" :key="i" class="text-gray-200">
-          <!-- <router-link :to="sub.to" @click="$emit('closeMenu')">{{ sub.label }}</router-link> -->
 
           <a v-if="sub.external" :href="sub.to" target="_blank" rel="noopener" @click="$emit('closeMenu')">
               {{ sub.label }}
@@ -32,6 +31,8 @@
 </template>
 
 <script setup>
+import { ref, watchEffect, onMounted, nextTick } from 'vue'
+
 const props = defineProps({
   item: Object,
   isActive: Boolean
@@ -67,25 +68,3 @@ function handleClick(item) {
   }
 }
 </script>
-
-<style scoped>
-.submenu-slide-enter-active,
-.submenu-slide-leave-active {
-  transition: all 0.4s ease;
-  max-height: 500px; /* change if needed */
-}
-
-.submenu-slide-enter-from,
-.submenu-slide-leave-to {
-  opacity: 0;
-  transform: translateY(-8px);
-  max-height: 0;
-}
-
-.submenu-slide-enter-to,
-.submenu-slide-leave-from {
-  opacity: 1;
-  transform: translateY(0);
-  max-height: 500px;
-}
-</style>

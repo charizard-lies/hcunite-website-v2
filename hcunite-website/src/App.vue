@@ -2,7 +2,10 @@
 import { ref } from 'vue'
 import DropdownMenu from './components/DropdownMenu.vue'
 import MenuItem from './components/MenuItem.vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 
+//routing data
 const mobileMenuOpen = ref(false);
 const activeIndex = ref(null)
 const menuItems = [
@@ -21,6 +24,7 @@ const menuItems = [
     external: false,
     to: '/faculties',
     subitems: [
+      {label: 'About', external: false, to: '/faculties'},
       {label: 'Apollo', external: false, to: '/apollo'},
       {label: 'Ares', external: false, to: '/'},
       {label: 'Artemis', external: false, to: '/'},
@@ -32,6 +36,7 @@ const menuItems = [
   { label: 'IMPORTANT LINKS', external: false, to: '/'  }
 ]
 
+//nav logic
 const handleToggle = (index) => {
   activeIndex.value = activeIndex.value === index ? null : index
 }
@@ -40,13 +45,44 @@ const handleClose = () => {
   mobileMenuOpen.value = false
 }
 
+//theme colors
+// const navbarClass = computed(() => {
+//   switch (route.name) {
+//     case 'Apollo':
+//       return 'text-apollo'
+//     case 'Ares':
+//       return 'text-ares'
+//     case 'Artemis':
+//       return 'text-artemis'
+//     case 'Athena':
+//       return 'text-athena hover:text-amber-500'
+//     default:
+//       return 'text-hwachred hover:text-amber-500'
+//   }
+// })
+
+// const footerClass = computed(() => {
+//   switch (route.name) {
+//     case 'Apollo':
+//       return 'bg-apollo'
+//     case 'Ares':
+//       return 'bg-ares'
+//     case 'Artemis':
+//       return 'bg-artemis'
+//     case 'Athena':
+//       return 'bg-athena hover:text-amber-500'
+//     default:
+//       return 'bg-hwachred hover:text-amber-500'
+//   }
+// })
+
 </script>
 
 
 
 <template>
   <div class="min-h-screen flex flex-col">
-    <nav class="w-full fixed py-5 px-7 z-50">
+    <nav class="w-full fixed py-5 px-6 z-50">
       <!-- inner box -->
       <div class="w-full backdrop-blur-3xl backdrop-brightness-200 bg-[rgba(255,255,255,0.75)] border-1 border-[rgba(220,220,220,0.75)] flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
         <!-- logo -->
@@ -82,7 +118,7 @@ const handleClose = () => {
       </ul>
     </div>
 
-    <main class="flex-grow">
+    <main class="flex-grow overflow-y-scroll scrollbar-thin scrollbar-thumb-black scrollbar-track-transparent hover:scrollbar-thumb-opacity-40 scroll-smooth">
       <router-view />
     </main>
 
