@@ -13,25 +13,28 @@
     </div>
 
     <!-- list -->
-    <transition name="submenu-slide">
-      <ul v-if="item.subitems && isActive" class="ml-4 mt-2 space-y-2 overflow-hidden">
-        <li v-for="(sub, i) in item.subitems" :key="i" class="text-gray-200">
+    <ul 
+    ref="content" 
+    v-if="item.subitems" 
+    class="ml-4 mt-2 space-y-2 overflow-hidden transition-[max-height] duration-500 ease-in-out"
+    :style="{ maxHeight: isActive ? contentScrollHeight + 'px' : '0px' }"
+    >
+      <li v-for="(sub, i) in item.subitems" :key="i" class="text-gray-200">
 
-          <a v-if="sub.external" :href="sub.to" target="_blank" rel="noopener" @click="$emit('closeMenu')">
-              {{ sub.label }}
-          </a>
-          
-          <router-link v-else :to="sub.to" @click="$emit('closeMenu')">
-              {{ sub.label }}
-          </router-link>
-        </li>
-      </ul>
-    </transition>
+        <a v-if="sub.external" :href="sub.to" target="_blank" rel="noopener" @click="$emit('closeMenu')">
+            {{ sub.label }}
+        </a>
+        
+        <router-link v-else :to="sub.to" @click="$emit('closeMenu')">
+            {{ sub.label }}
+        </router-link>
+      </li>
+    </ul>
   </li>
 </template>
 
 <script setup>
-import { ref, watchEffect, onMounted, nextTick } from 'vue'
+import { ref, watch, onMounted, nextTick } from 'vue'
 
 const props = defineProps({
   item: Object,
@@ -67,4 +70,23 @@ function handleClick(item) {
     emit('closeMenu')
   }
 }
+
+//scroll logic
+const content = ref(null)
+const contentScrollHeight = ref(0)
+
+function updateScrollHeight() {
+  nextTick(() => {
+    if (content.value) {
+      contentScrollHeight.value = content.value.scrollHeight
+    }
+  })
+}
+
+onMounted(updateScrollHeight)
+
+watch(() => props.isActive, (newVal) => {
+  console.log("success!")
+  updateScrollHeight()
+})
 </script>
