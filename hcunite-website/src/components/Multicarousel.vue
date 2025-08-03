@@ -50,28 +50,54 @@
     </div>
 
     <!-- pictures -->
-    <div class="w-full lg:w-[50%] max-h-[50vh] lg:max-h-none flex flex-row gap-4 px-4 py-4 overflow-x-auto scroll-smooth snap-x snap-mandatory ">
-        <div class="flex flex-row gap-4 snap-x snap-mandatory ">
+    <div class="w-full lg:w-[50%] max-h-[50vh] lg:max-h-none p-4 relative">
+        <div class="absolute top-8 right-8 text-white text-sm px-2 py-1 rounded z-10">
+            <div class="flex flex-row flex-nowrap gap-2">
+                <svg 
+                @click="scrollLeft" 
+                width="32px" 
+                height="32px" 
+                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 7L10 12L15 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="m-auto">{{ currentImageIndex + 1 }}/{{ currentImages.length }}</p>
+                <svg 
+                @click="scrollRight" 
+                width="32px" 
+                height="32px" 
+                viewBox="0 0 24 24" fill=none xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 7L15 12L10 17" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
 
-            <div v-for="(img, i) in currentImages" 
-            :key="i" 
-            @click="handleDesktopClick(i)"
-            @touchstart="handleTouchStart"
-            @touchend="(e) => handleTouchEnd(e, i)"
-            class="w-full snap-center flex-shrink-0 rounded-lg overflow-hidden relative"
-            >
-                <img :src="img" alt="event picture" class="w-full h-full aspect-auto object-cover object-center" />
-                <div 
-                class="absolute inset-0 bg-black transition-opacity duration-500" 
-                :class="overlayToggles[selectedIndex][i] ? 'opacity-50' : 'opacity-0'"
+        <div ref="imageContainer" 
+        class="h-full flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory"
+        @scroll.passive="updateCurrentIndex"
+        >
+            
+            <div class="flex flex-row gap-4 snap-x snap-mandatory ">
+
+                <div v-for="(img, i) in currentImages" 
+                :key="i" 
+                @click="handleDesktopClick(i)"
+                @touchstart="handleTouchStart"
+                @touchend="(e) => handleTouchEnd(e, i)"
+                class="w-full snap-center flex-shrink-0 rounded-lg overflow-hidden relative"
                 >
+                    <img :src="img" alt="event picture" class="w-full h-full aspect-auto object-cover object-center" />
+                    <div 
+                    class="absolute inset-0 bg-black transition-opacity duration-500" 
+                    :class="overlayToggles[selectedIndex][i] ? 'opacity-50' : 'opacity-0'"
+                    >
+                    </div>
+                    <div class="absolute text-white inset-0 p-4" :class="overlayToggles[selectedIndex][i] ? 'opacity-100' : 'opacity-0'" >
+                        <p>
+                            {{events[selectedIndex].text[i]}}
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="absolute text-white inset-0 p-4" :class="overlayToggles[selectedIndex][i] ? 'opacity-100' : 'opacity-0'" >
-                    <p>
-                        {{events[selectedIndex].text[i]}}
-                    </p>
-                </div>
-                
             </div>
         </div>
     </div>
@@ -142,11 +168,37 @@ const overlayToggles = ref(events.map(event => event.images.map(() => false)))
 // Images of the currently selected event (reactive)
 const currentImages = computed(() => events[selectedIndex.value].images)
 
+const imageContainer = ref(null)
+const currentImageIndex = ref(0)
+
+function updateCurrentIndex() {
+  if (!imageContainer.value) return
+  const scrollLeft = imageContainer.value.scrollLeft
+  const containerWidth = imageContainer.value.clientWidth
+  const index = Math.round(scrollLeft / containerWidth)
+  currentImageIndex.value = index
+  console.log(index)
+}
+
+function scrollLeft() {
+  if (imageContainer.value) {
+    imageContainer.value.scrollBy({ left: -300, behavior: 'smooth' })
+    updateCurrentIndex()
+  }
+}
+
+function scrollRight() {
+  if (imageContainer.value) {
+    imageContainer.value.scrollBy({ left: 300, behavior: 'smooth' })
+    updateCurrentIndex()
+  }
+}
+
+//handle clicking events
 const isMobile = ref(window.innerWidth < 1024)
 const eventRefs = []
 const mobileContainer = ref(null)
 const visibleIndex = ref(null)
-
 
 function onSelect(index) {
     selectedIndex.value = index
