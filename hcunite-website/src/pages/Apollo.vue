@@ -24,14 +24,11 @@
         >
         </div>
 
-        <div class="flex flex-col items-center justify-center h-screen w-full transition-all duration-500 text-white text-center opacity-0" 
+        <div class="flex flex-col items-center justify-center h-screen w-full transition-all duration-500 text-apollo text-center opacity-0" 
           :class="{'backdrop-blur-xl opacity-100': showOverlay}"
         >
-            <h1 
-            @click.stop 
-            @touchstart.stop 
-            @touchend.stop 
-            class="text-5xl md:text-7xl lg:text-9xl font-inter font-bold"
+            <h1
+            class="hover:text-white transition-colors duration-500"
             >
                 APOLLO
             </h1>
@@ -42,6 +39,7 @@
             target="blank"
             href="https://www.instagram.com/apollofaculty/" 
             class="text-white font-poppins text-md inline-block border-1 border-apollo hover:bg-apollo rounded-full py-3 px-6 mt-6 lg:text-lg transition-colors duration-300"
+            :class="{'pointer-events-auto opacity-100': showOverlay, 'pointer-events-none opacity-0': !showOverlay}"
             >
             Instagram
             </a>
@@ -58,7 +56,7 @@
   </section>
 
   <section class="p-12">
-    <p>
+    <p class="centered-text-block">
       (FROM LEFT TO RIGHT)
       <br><br>First Row: 
       <br>Toh Jun Hao; Chen Leqi
@@ -73,8 +71,8 @@
 
   <section class="text-justify p-12">
     <img src="../assets/informal_council_pic.jpg" alt="" class="aspect-square max-w-[700px] w-full m-auto rounded-xl object-cover">
-    <h2 class="mt-12 text-4xl md:text-7xl font-poppins text-center">The Bull</h2>
-    <p class="max-w-[700px] mt-6 mx-auto font-poppins">
+    <h2 class="mt-12 text-center">The Bull</h2>
+    <p class="centered-text-block mt-6">
       Roaming through Apollo Faculty's spirit, our sacred animal – the bull – 
       serves as an emblem of artistic expression and free exploration. 
       It is a radiant representation of the Faculty's tenacity and commitment to fostering a robust academic environment, 
@@ -90,9 +88,14 @@
 
 
   <section class="w-full py-12 px-4">
-    <div class="px-4 lg:px-12">
-      <MultiCarousel></MultiCarousel>   
+    <h2 class="text-center mb-4">Events</h2>
+    <div class="lg:px-12">
+      <MultiCarousel :events="events"></MultiCarousel>   
     </div>
+  </section>
+
+  <section class="w-full py-12 px-4">
+
   </section>
 </template>
 
@@ -101,6 +104,61 @@ import groupPhoto from '../assets/test.jpeg'
 import Dropdown from '../components/Dropdown.vue'
 import MultiCarousel from '../components/Multicarousel.vue'
 import { ref } from 'vue'
+
+const events = [
+  {
+    name: 'ORIENTATION',
+    images: [
+      '/images/informal_council_pic.jpg',
+      '/images/test.jpeg',
+      '/images/informal_council_pic.jpg',
+    ],
+    text:[
+        "djafaldjfldjf",
+        "aldfkjdslfjlkdjslf",
+        "dlfkjladjfljdslfjlsdlf",
+    ]
+  },
+  {
+    name: 'FACULTY BRUNCH',
+    images: [
+      '/images/test.jpeg',
+      '/images/informal_council_pic.jpg',
+      '/images/test.jpeg',
+    ],
+    text:[
+        "djafaldjfldjf",
+        "aldfkjdslfjlkdjslf",
+        "dlfkjladjfljdslfjlsdlf",
+    ]
+  },
+  {
+    name: 'FACULTY CIP (FCIP)',
+    images: [
+      '/images/informal_council_pic.jpg',
+      '/images/test.jpeg',
+      '/images/informal_council_pic.jpg',
+    ],
+    text:[
+        "djafaldjfldjf",
+        "aldfkjdslfjlkdjslf",
+        "dlfkjladjfljdslfjlsdlf",
+    ]
+  },
+  {
+    name: 'WELFARE INITIATIVES',
+    images: [
+      '/images/test.jpeg',
+      '/images/informal_council_pic.jpg',
+      '/images/test.jpeg',
+    ],
+    text:[
+        "djafaldjfldjf",
+        "aldfkjdslfjlkdjslf",
+        "dlfkjladjfljdslfjlsdlf",
+    ]
+  }
+]
 
 const showOverlay = ref(true)
 

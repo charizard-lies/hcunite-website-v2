@@ -46,35 +46,37 @@ const handleClose = () => {
 }
 
 //theme colors
-// const navbarClass = computed(() => {
-//   switch (route.name) {
-//     case 'Apollo':
-//       return 'text-apollo'
-//     case 'Ares':
-//       return 'text-ares'
-//     case 'Artemis':
-//       return 'text-artemis'
-//     case 'Athena':
-//       return 'text-athena hover:text-amber-500'
-//     default:
-//       return 'text-hwachred hover:text-amber-500'
-//   }
-// })
+const route = useRoute()
 
-// const footerClass = computed(() => {
-//   switch (route.name) {
-//     case 'Apollo':
-//       return 'bg-apollo'
-//     case 'Ares':
-//       return 'bg-ares'
-//     case 'Artemis':
-//       return 'bg-artemis'
-//     case 'Athena':
-//       return 'bg-athena hover:text-amber-500'
-//     default:
-//       return 'bg-hwachred hover:text-amber-500'
-//   }
-// })
+const navbarClass = computed(() => {
+  switch (route.path) {
+    case '/apollo':
+      return 'text-apollo-dark hover:text-hwachred'
+    case '/ares':
+      return 'text-ares hover:text-hwachred'
+    case '/artemis':
+      return 'text-artemis hover:text-hwachred'
+    case '/athena':
+      return 'text-athena hover:text-hwachred'
+    default:
+      return 'text-hwachred hover:text-amber-500'
+  }
+})
+
+const footerClass = computed(() => {
+  switch (route.path) {
+    case '/apollo':
+      return 'bg-apollo text-black'
+    case '/ares':
+      return 'bg-ares text-white'
+    case '/artemis':
+      return 'bg-artemis text-white'
+    case '/athena':
+      return 'bg-athena text-white'
+    default:
+      return 'bg-hwachred text-white'
+  }
+})
 
 </script>
 
@@ -86,7 +88,7 @@ const handleClose = () => {
       <!-- inner box -->
       <div class="w-full backdrop-blur-3xl backdrop-brightness-200 bg-[rgba(255,255,255,0.75)] border-1 border-[rgba(220,220,220,0.75)] flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
         <!-- logo -->
-        <div class="text-2xl font-inter font-black lg:text-4xl text-hwachred hover:text-amber-500 transition-colors duration-300"><router-link to="/">HCUNITE</router-link></div>
+        <div class="text-2xl font-inter font-black lg:text-4xl transition-colors duration-300" :class="navbarClass"><router-link to="/">HCUNITE</router-link></div>
         <!-- headers -->
         <div class="hidden lg:flex max-w-[80%] gap-5 xl:gap-10 justify-between">
           <DropdownMenu v-for="(item, key) in menuItems" :key="key" :item="item"/>
@@ -122,19 +124,19 @@ const handleClose = () => {
       <router-view />
     </main>
 
-    <footer class="px-10 py-10 bg-hwachred text-white text-inter text-center">
+    <footer class="px-10 py-10 text-inter text-center" :class="footerClass">
       <div class="font-semibold text-md lg:text-xl my-3">
         CHECK OUT OUR OTHER PLATFORMS FOR MORE
       </div>
       <div class="flex flex-row justify-center my-3">
         <a href="https://www.instagram.com/hcunite/">
-          <svg class="text-white fill-current h-[70px] w-[70px] p-3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <svg class="fill-current h-[70px] w-[70px] p-3" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/>
               <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/>
           </svg>
         </a>
         <a href="https://www.youtube.com/channel/UCPz0DNqC6i1pyJvKYhSHlKw">
-          <svg class="text-white fill-current h-[70px] w-[70px] p-3" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg class="fill-current h-[70px] w-[70px] p-3" viewBox="0 -3 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>youtube [#168]</title>
             <desc>Created with Sketch.</desc>
             <defs></defs>
@@ -148,7 +150,7 @@ const handleClose = () => {
           </svg>
         </a>
         <a href="https://www.facebook.com/hcunite/">
-          <svg class="text-white fill-current h-[70px] w-[70px] p-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <svg class="fill-current h-[70px] w-[70px] p-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <rect x="0" fill="none" width="20" height="20"/>
             <g>
               <path d="M2.89 2h14.23c.49 0 .88.39.88.88v14.24c0 .48-.39.88-.88.88h-4.08v-6.2h2.08l.31-2.41h-2.39V7.85c0-.7.2-1.18 1.2-1.18h1.28V4.51c-.22-.03-.98-.09-1.86-.09-1.85 0-3.11 1.12-3.11 3.19v1.78H8.46v2.41h2.09V18H2.89c-.49 0-.89-.4-.89-.88V2.88c0-.49.4-.88.89-.88z"/>
