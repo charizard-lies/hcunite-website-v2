@@ -3,13 +3,6 @@
     class="relative w-full overflow-hidden custom-cursor-eye-open"
     :class="{'custom-cursor-eye-close': showOverlay}"
   >
-    <!-- Background Image -->
-    <!-- <img
-      src="../assets/informal_council_pic.jpg"
-      alt="Group Photo"
-      class="absolute w-full h-full object-cover transition-all duration-500"
-      :class="{'blur-md': showOverlay }"
-    /> -->
 
     <div class="w-full h-screen bg-cover bg-center flex" 
       :style="{ backgroundImage: `url(${groupPhoto})` }" 
@@ -70,7 +63,7 @@
   <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
   <section class="text-justify p-12">
-    <img src="../assets/informal_council_pic.jpg" alt="" class="aspect-square max-w-[700px] w-full m-auto rounded-xl object-cover">
+    <img src="../assets/informal_council_pic.jpg" alt="" class="aspect-square w-[70%] max-w-[500px] m-auto rounded-xl object-cover">
     <h2 class="mt-12 text-center">The Bull</h2>
     <p class="centered-text-block mt-6">
       Roaming through Apollo Faculty's spirit, our sacred animal – the bull – 
@@ -87,15 +80,18 @@
   </section>
 
 
-  <section class="w-full py-12 px-4">
-    <h2 class="text-center mb-4">Events</h2>
-    <div class="lg:px-12">
+  <section class="w-full py-6 px-4">
+    <h2 class="text-center">Events</h2>
+    <div class="mt-4 lg:px-12">
       <MultiCarousel :events="events"></MultiCarousel>   
     </div>
   </section>
 
-  <section class="w-full py-12 px-4">
-
+  <section class="w-full py-6">
+    <h2 class="text-center">Faculty Cheers</h2>
+    <div class="mt-4">
+      <Carousel :cheers="cheers"></Carousel>
+    </div>
   </section>
 </template>
 
@@ -103,6 +99,7 @@
 import groupPhoto from '../assets/test.jpeg'
 import Dropdown from '../components/Dropdown.vue'
 import MultiCarousel from '../components/Multicarousel.vue'
+import Carousel from '../components/Carousel.vue'
 import { ref } from 'vue'
 
 const events = [
@@ -158,6 +155,15 @@ const events = [
         "dlfkjladjfljdslfjlsdlf",
     ]
   }
+]
+
+const cheers = [
+  "/images/cheers_test.jpg",
+  "/images/cheers_test.jpg",
+  "/images/cheers_test.jpg",
+  "/images/cheers_test.jpg",
+  "/images/cheers_test.jpg",
+  "/images/test.jpeg",
 ]
 
 const showOverlay = ref(true)

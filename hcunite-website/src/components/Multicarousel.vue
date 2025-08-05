@@ -97,12 +97,12 @@
                 @click="handleDesktopClick(i)"
                 @touchstart="handleTouchStart"
                 @touchend="(e) => handleTouchEnd(e, i)"
-                class="w-full snap-center flex-shrink-0 rounded-xl overflow-hidden relative shadow-2xl"
+                class="w-full snap-center flex-shrink-0 rounded-xl overflow-hidden relative"
                 >
                     <img :src="img" alt="event picture" class="w-full h-full aspect-auto object-cover object-center" />
                     <div 
-                    class="absolute inset-0 bg-black transition-opacity duration-500" 
-                    :class="overlayToggles[selectedIndex][i] ? 'opacity-50' : 'opacity-0'"
+                    class="absolute inset-0 transition-opacity duration-500 bg-black/40 backdrop-blur-md rounded-xl" 
+                    :class="overlayToggles[selectedIndex][i] ? 'opacity-100' : 'opacity-0'"
                     >
                     </div>
                     <div class="absolute text-white inset-0 p-4 transition-opacity duration-500" :class="overlayToggles[selectedIndex][i] ? 'opacity-100' : 'opacity-0'" >
@@ -300,12 +300,5 @@ onUnmounted(() => {n
 }
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
-}
-.custom-scroll-hide::-webkit-scrollbar {
-  display: none;
-}
-.custom-scroll-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 </style>

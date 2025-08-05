@@ -39,3 +39,11 @@
 .centered-text-block{
   @apply mx-auto max-w-[700px] text-justify
 }
+
+.custom-scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+.custom-scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
