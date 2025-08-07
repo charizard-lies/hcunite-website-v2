@@ -13,15 +13,26 @@
             </svg>
         </div>
 
-        <div ref="carousel" class="max-h-[80vh] flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory custom-scroll-hide py-6" @scroll.passive="updateCurrentIndex">
+        <div ref="carousel" class="h-[80vh] flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory custom-scroll-hide py-6" @scroll.passive="updateCurrentIndex">
             <div class="shrink-0 w-[40%]"></div>
-            <div v-for="(img, i) in cheers" 
+            <div v-for="(img, i) in cheers"
             :key="i" 
             :ref="el => cheerRefs[i] = el"
             class="flex items-center justify-center snap-center flex-shrink-0 transition-all duration-500"
-            :class="currentIndex==i ? 'scale-100':'scale-60'"
+            :class="[
+                currentIndex === i ? 'scale-100':'scale-60',
+                limitBy[i] === 'height'
+                    ? 'h-full w-auto' : 
+                    limitBy[i] === 'width'
+                        ? 'w-[70%] h-auto'
+                        : 'w-[70%] h-auto'
+                ]"
             >
-                <img :src="img" alt="cheers booklet" class="max-h-full max-w-90 aspect-auto rounded-xl" />
+                <img
+            @load="event => onImageLoad(event, i)"
+            :src="img" 
+            alt="cheers booklet" 
+            class="max-h-full max-w-full aspect-auto rounded-xl" />
             </div>
             <div class="shrink-0 w-[40%]"></div>
         </div>
@@ -79,10 +90,28 @@ function updateCurrentIndex() {
   if (currentIndex.value !== closestIndex) {
     currentIndex.value = closestIndex
   }
-//   const scrollLeft = carousel.value.scrollLeft
-//   const containerWidth = carousel.value.clientWidth
-//   const index = Math.round(scrollLeft / containerWidth)
-//   currentIndex.value = index
+}
+
+const imageDimensions = ref([])
+const limitBy = ref([])
+
+function onImageLoad(event, index) {
+    const { naturalWidth, naturalHeight } = event.target
+    imageDimensions.value[index] = { width: naturalWidth, height: naturalHeight }
+
+    const imageRatio = naturalHeight / naturalWidth
+    const containerRect = carousel.value.getBoundingClientRect()
+    const containerRatio = containerRect.height / (containerRect.width * 0.7)
+
+    if (imageRatio > containerRatio) {
+        // Image is taller than allowed — limit by height
+        limitBy.value[index] = 'height'
+    } else {
+        // Image is wider than allowed — limit by width
+        limitBy.value[index] = 'width'
+    }
+
+    console.log(`Image ${index}: ${naturalWidth}x${naturalHeight} → limit by ${limitBy.value[index]}`)
 }
 
 </script>
