@@ -31,9 +31,9 @@ const menuItems = [
       {label: 'Athena', external: false, to: '/'},
     ]
   },
-  { label: 'SODACHE', external: false, to: '/'  },
-  { label: 'ELECTIONS', external: false, to: '/'  },
-  { label: 'IMPORTANT LINKS', external: false, to: '/'  }
+  { label: 'SODACHE', external: false, to: '/sodache'  },
+  { label: 'ELECTIONS', external: false, to: '/elections'  },
+  { label: 'IMPORTANT LINKS', external: false, to: '/links'  }
 ]
 
 //nav logic
@@ -50,6 +50,15 @@ const route = useRoute()
 
 const navbarClass = computed(() => {
   switch (route.path) {
+    case '/sodache':
+      return 'bg-transparent border-1 border-white/20 text-white'
+    default:
+      return 'bg-white/75'
+  }
+})
+
+const logoClass = computed(() => {
+  switch (route.path) {
     case '/apollo':
       return 'text-apollo-dark hover:text-hwachred'
     case '/ares':
@@ -58,10 +67,24 @@ const navbarClass = computed(() => {
       return 'text-artemis hover:text-hwachred'
     case '/athena':
       return 'text-athena hover:text-hwachred'
+    case '/sodache':
+      switch (sodacheStore.activeSection) {
+        case 'song':
+          return 'text-song hover:text-white'
+        case 'dance':
+          return 'text-dance hover:text-white'
+        case 'cheer':
+          return 'text-cheer hover:text-white'
+        default:
+          return 'bg-hwachred text-white'
+      }
     default:
       return 'text-hwachred hover:text-amber-500'
   }
 })
+
+import { useSodacheStore } from './stores/sodacheStore'
+const sodacheStore = useSodacheStore()
 
 const footerClass = computed(() => {
   switch (route.path) {
@@ -73,9 +96,29 @@ const footerClass = computed(() => {
       return 'bg-artemis text-white'
     case '/athena':
       return 'bg-athena text-white'
+    case '/sodache':
+      switch (sodacheStore.activeSection) {
+        case 'song':
+          return 'bg-song text-black'
+        case 'dance':
+          return 'bg-dance text-white'
+        case 'cheer':
+          return 'bg-cheer text-white'
+        default:
+          return 'bg-hwachred text-white'
+      }
     default:
       return 'bg-hwachred text-white'
   }
+})
+
+const bgClass = computed(() => {
+  switch (route.path) {
+    case '/sodache':
+      return 'bg-gray-950'
+    default:
+      return 'bg-white'
+    }
 })
 
 </script>
@@ -83,12 +126,12 @@ const footerClass = computed(() => {
 
 
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col overflow-x-hidden overflow-y-scroll custom-scroll-hide" :class="bgClass">
     <nav class="w-full fixed py-5 px-6 z-50">
       <!-- inner box -->
-      <div class="w-full backdrop-blur-3xl backdrop-brightness-200 bg-[rgba(255,255,255,0.75)] border-1 border-[rgba(220,220,220,0.75)] flex flex-row justify-between m-auto px-5 py-3 rounded-xl">
+      <div class="w-full backdrop-blur-xl flex flex-row justify-between m-auto px-5 py-3 rounded-xl" :class="navbarClass">
         <!-- logo -->
-        <div class="text-2xl font-inter font-black lg:text-4xl transition-colors duration-300" :class="navbarClass"><router-link to="/">HCUNITE</router-link></div>
+        <div class="text-2xl font-inter font-black lg:text-4xl transition-colors duration-300" :class="logoClass"><router-link to="/">HCUNITE</router-link></div>
         <!-- headers -->
         <div class="hidden lg:flex max-w-[80%] gap-5 xl:gap-10 justify-between">
           <DropdownMenu v-for="(item, key) in menuItems" :key="key" :item="item"/>
@@ -120,7 +163,7 @@ const footerClass = computed(() => {
       </ul>
     </div>
 
-    <main class="flex-grow overflow-y-scroll scrollbar-thin scrollbar-thumb-black scrollbar-track-transparent hover:scrollbar-thumb-opacity-40 scroll-smooth">
+    <main class="flex-grow">
       <router-view />
     </main>
 

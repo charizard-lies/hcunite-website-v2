@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Ma+Shan+Zheng&display=swap');
+
 @import "tailwindcss";
 
 @theme {
   --font-inter: 'Inter';
   --font-poppins: 'Poppins';
+  --font-longcang: 'Long Cang';
+  --font-mashanzheng: 'Ma Shan Zheng';
   --color-hwachred: #CE2222;
   --color-hwachred-dark: #6D1212;
   --color-apollo: #ffcc02;
@@ -11,6 +15,9 @@
   --color-ares: #c9102d;
   --color-artemis: #06048d;
   --color-athena:#027b3e;
+  --color-song: #00D689;
+  --color-dance: #AB00D6;
+  --color-cheer: #FFB71C;
 }
 
 @layer base {
