@@ -119,7 +119,7 @@
         <p class="mt-4">College Reception (Emergency Contact): 6468 3955</p>
         <div class="py-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <div class="relative rounded-xl overflow-hidden scale-100 hover:shadow-xl hover:scale-105 transition-all duration-500" >
-                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="/images/school_map.jpg" alt="">
+                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="../assets/links_done_4/map.jpeg" alt="">
                 <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white bg-gradient-to-t from-black to-transparent">
                     <div class="z-20">
                         <h3>School Map</h3>
@@ -134,7 +134,7 @@
                 
             </div>
             <div class="relative rounded-xl overflow-hidden scale-100 hover:shadow-xl hover:scale-105 transition-all duration-500" >
-                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="/images/school_map.jpg" alt="">
+                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="../assets/links_done_4/handbook.jpg" alt="">
                 <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white bg-gradient-to-t from-black to-transparent">
                     <div class="z-20">
                         <h3>C1 Handbook</h3>
@@ -149,7 +149,7 @@
                 
             </div>
             <div class="relative rounded-xl overflow-hidden scale-100 sm:col-span-2 xl:col-span-1 hover:shadow-xl hover:scale-105 transition-all duration-500" >
-                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="/images/school_map.jpg" alt="">
+                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="../assets/links_done_4/sodache.JPG" alt="">
                 <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white bg-gradient-to-t from-black to-transparent">
                     <div class="z-20">
                         <h3>SODACHE</h3>

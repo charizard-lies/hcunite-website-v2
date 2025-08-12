@@ -17,7 +17,7 @@
             <!-- hero widget -->
              <div class="w-full h-full overflow-hidden relative">
                 <router-link to="/Council52">
-                    <img src="../assets/informal_council_pic.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
+                    <img src="../assets/Home_done_1/council_pic.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
 
                     <h1 class="p-12 absolute bottom-0 z-20 text-white">HWA CHONG STUDENTS' COUNCIL</h1>
                 </router-link>
