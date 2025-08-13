@@ -222,6 +222,14 @@ const councillors = {
             "position": "Member, PromCo Member, O1Co Member",
             "description": "Hi I’m Toby and I enjoy eating bananas while plotting to steal the moon 🌝🌝🍌😈 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
         },
+        "Travis Dael Ng Shao Jie": {
+            "position": "Member, PromCo Member, O1Co Member",
+            "description": "Hi I’m Travis and Cheung See ate all my bananas 😱😋🤤🍌 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+        },
+        "Yue Jiayuan": {
+            "position": "Member, TDCo Chairperson, EleCo Member",
+            "description": "Hi I’m 🌕 Jiayuan and I want to eat the moon because the crescent moon looks like a banana 🌙🍌😋🤤https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+        },
         "Tan Weiyan Ruson": {
             "position": "Member, MAFCo Chairperson, EleCo Member",
             "description": "Hi I’m Ruson and I’m on a quest to find the ultimate banana recipe while planning to steal the moon 🍌🌙😈😋 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw== i also always catch someone doodling maf pubs during breaks 🎨🧐"
