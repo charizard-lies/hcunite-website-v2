@@ -374,7 +374,7 @@ const councillors = {
     <!-- ecaco -->
     <section ref="ecaco" class="pb-12 px-3">
         <div class="aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="../assets/51st/51st_ECACo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.3em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/25">
                 THE EXTENDED-<br>
                 COUNCIL<br>
@@ -408,7 +408,7 @@ const councillors = {
     <!-- pubco -->
     <section ref="pubco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="../assets/51st/51st_PubCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.4em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.2em] lg:text-8xl/25">
                 THE PUBLICATIONS<br>
                 AND PUBLICITY<br>
@@ -442,7 +442,7 @@ const councillors = {
     <!-- secco -->
     <section ref="secco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="../assets/51st/51st_SECCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE STUDENT<br>
                 ENGAGEMENT<br>
@@ -478,7 +478,7 @@ const councillors = {
     <!-- snr -->
     <section ref="snr" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="../assets/51st/51st_SnR.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE SOCIAL<br>
                 AND RELATIONS<br>
@@ -514,7 +514,7 @@ const councillors = {
     <!-- welco -->
     <section ref="welco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="../assets/51st/51st_WelCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/20 lg:tracking-[0.4em] lg:text-8xl/40">
                 THE WELFARE<br>
                 COMMITTEE<br>
