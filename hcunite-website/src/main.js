@@ -12,6 +12,9 @@ import Council49 from './pages/Council49.vue'
 import Council48 from './pages/Council48.vue'
 import Faculties from "./pages/Faculties.vue"
 import Apollo from "./pages/Apollo.vue"
+import Ares from "./pages/Ares.vue"
+import Artemis from "./pages/Artemis.vue"
+import Athena from "./pages/Athena.vue"
 import Sodache from "./pages/Sodache.vue"
 import Elections from "./pages/Elections.vue"
 import Links from "./pages/Links.vue"
@@ -25,6 +28,9 @@ const routes = [
     { path: '/council48', component: Council48},
     { path: '/faculties', component: Faculties},
     { path: '/apollo', component: Apollo},
+    { path: '/ares', component: Ares},
+    { path: '/artemis', component: Artemis},
+    { path: '/athena', component: Athena},
     { path: '/sodache', component: Sodache},
     { path: '/elections', component: Elections},
     { path: '/links', component: Links},

@@ -53,8 +53,6 @@ const props = defineProps({
 })
 
 const defaultData = {
-  englishTitle: true,
-  englishComposer: true,
   title: 'Error',
   composer: 'Hwa Chong',
   description: '',

@@ -4,12 +4,14 @@
     :class="{'custom-cursor-eye-close': showOverlay}"
   >
 
-    <div class="w-full h-screen bg-cover bg-center flex" 
-      :style="{ backgroundImage: `url(${groupPhoto})` }" 
+    <div class="w-full h-auto bg-cover bg-center flex" 
       @click="handleDesktopClick"
       @touchstart="handleTouchStart"
       @touchend="handleTouchEnd"
     >
+        <div class="w-full aspect-auto">
+          <img src="/images/Apollo/apollo_photo.jpg" alt="">
+        </div>
 
         <div 
             class="absolute inset-0 bg-black transition-opacity duration-500" 
@@ -17,12 +19,10 @@
         >
         </div>
 
-        <div class="flex flex-col items-center justify-center h-screen w-full transition-all duration-500 text-apollo text-center opacity-0" 
+        <div class="absolute inset-0 flex flex-col items-center justify-center w-full transition-all duration-500 text-white text-center opacity-0" 
           :class="{'backdrop-blur-xl opacity-100': showOverlay}"
         >
-            <h1
-            class="hover:text-white transition-colors duration-500"
-            >
+            <h1>
                 APOLLO
             </h1>
             <a 
@@ -60,10 +60,10 @@
     </p>
   </section>
 
-  <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
+  <div class="h-px w-[60%] max-w-[900px] bg-apollo m-auto"></div>
 
   <section class="text-justify p-12">
-    <img src="../assets/informal_council_pic.jpg" alt="" class="aspect-square w-[70%] max-w-[500px] m-auto rounded-xl object-cover">
+    <img src="/images/Apollo/apollo.jpg" alt="" class="aspect-square w-[70%] max-w-[500px] m-auto rounded-xl object-cover">
     <h2 class="mt-12 text-center">The Bull</h2>
     <p class="centered-text-block mt-6">
       Roaming through Apollo Faculty's spirit, our sacred animal – the bull – 
@@ -82,8 +82,9 @@
 
   <section class="w-full py-6 px-4">
     <h2 class="text-center">Events</h2>
+    <p class="text-center mt-2 text-gray-600">Click on the images to learn more</p>
     <div class="mt-4 lg:px-12">
-      <MultiCarousel :events="events"></MultiCarousel>   
+      <MultiCarousel :events="events" faculty="apollo"></MultiCarousel>   
     </div>
   </section>
 
@@ -96,7 +97,6 @@
 </template>
 
 <script setup>
-import groupPhoto from '../assets/test.jpeg'
 import Dropdown from '../components/Dropdown.vue'
 import MultiCarousel from '../components/Multicarousel.vue'
 import Carousel from '../components/Carousel.vue'
@@ -106,64 +106,65 @@ const events = [
   {
     name: 'ORIENTATION',
     images: [
-      '/images/informal_council_pic.jpg',
-      '/images/test.jpeg',
-      '/images/informal_council_pic.jpg',
+      '/images/Apollo/apollo_ori_1.JPG',
+      '/images/Apollo/apollo_ori_2.JPG',
+      '/images/Apollo/apollo_ori_3.jpg',
     ],
     text:[
-        "djafaldjfldjf",
-        "aldfkjdslfjlkdjslf",
-        "dlfkjladjfljdslfjlsdlf",
+        "O1 – the opening of the gates to the Kingdom of Light.",
+        "With Apollo24 as the theme for this year, you will embark on an exciting mission of discovery, growth and accomplishment, like the astronauts in The Apollo Program. Venture out into the unexplored stars – from class-bonding games to heart-racing war games, join forces with your friends and make memories that will be etched into the hallowed hallways of our Kingdom!",
+        "After your success at O1, celebrations are due! Aside from the God of Sun, Apollo is also the God of Music and Dance. So dance the night away at the Post Orientation Party (POP) and light up the school with our signature Faculty Prop, the finger lights. Representing Apollo in an inter-faculty dance competition, be sure to radiate the darkness with your shining dance moves!",
     ]
   },
   {
     name: 'FACULTY BRUNCH',
     images: [
-      '/images/test.jpeg',
-      '/images/informal_council_pic.jpg',
-      '/images/test.jpeg',
+      '/images/Apollo/apollo_brunch_1.jpg',
+      '/images/Apollo/apollo_brunch_2.jpg',
+      '/images/Apollo/apollo_brunch_3.jpg',
     ],
     text:[
-        "djafaldjfldjf",
-        "aldfkjdslfjlkdjslf",
-        "dlfkjladjfljdslfjlsdlf",
+        "Faculty Brunch is a yearly event which allows for the Faculty to gather and dine amongst their friends.",
+        "At Moonopoly Moves, Apollo’s Faculty Brunch 2023, we checked “playing a life-size board game with 269 other people while eating scrumptious burgers” off our bucket list.",
+        "From our live cotton candy station that captivated the hearts of many, to our talented Sunshines who put on enchanting dances, singing and even harmonica performances, Faculty Brunch surely gave everyone a MOO-ment to remember!",
     ]
   },
   {
     name: 'FACULTY CIP (FCIP)',
     images: [
-      '/images/informal_council_pic.jpg',
-      '/images/test.jpeg',
-      '/images/informal_council_pic.jpg',
+      '/images/Apollo/apollo_cip_1.jpg',
+      '/images/Apollo/apollo_cip_2.jpg',
+      '/images/Apollo/apollo_cip_3.jpg',
     ],
     text:[
-        "djafaldjfldjf",
-        "aldfkjdslfjlkdjslf",
-        "dlfkjladjfljdslfjlsdlf",
+        "Always passionate about helping those around us, we also embody Apollo’s lesser-known role as the God of Healing in the Greek Pantheon.",
+        "FCIP allows us to shine our rays of warmth and kindness beyond the campus, spreading love to others.",
+        "In 2023, we partnered with New Life Community Services (NLCS) to hold a concert and interaction activities for over 150 children. From magic tricks to subway cookies, both the children and our faculty radiated with a glow!",
     ]
   },
   {
     name: 'WELFARE INITIATIVES',
     images: [
-      '/images/test.jpeg',
-      '/images/informal_council_pic.jpg',
-      '/images/test.jpeg',
+      '/images/Apollo/apollo_welfare_1.jpg',
+      '/images/Apollo/apollo_welfare_2.jpg',
+      '/images/Apollo/apollo_welfare_3.jpg',
     ],
     text:[
-        "djafaldjfldjf",
-        "aldfkjdslfjlkdjslf",
-        "dlfkjladjfljdslfjlsdlf",
+        "Aside from the exciting events planned, the Apollo Faculty Committee also plans several welfare initiatives to add the extra sunshine into the lives of the students in our Faculty. <br><br>Our Instagram video series, Wonderful Humans Of Apollo (WHOA), aims to highlight the unique personalities and talents of the students in Apollo Faculty, and brighten up their day through street interviews and fun challenges! ",
+        "We also have our flagship DeliverMOO, where students can order food for themselves and their friends! In 2023, we delivered the ever-popular Dunkin Donuts to all the Sunshines craving a sweet treat. Their smiles after devouring the donuts certainly lit up the school!",
+        "Collaborations with other Faculties allows us to explore new opportunities. Through Dusk to Dawn, our iconic collaboration with Artemis Faculty, students from both Faculties managed to relish incredible busking performances, as well as delectable snacks and exclusive merchandise. And to top it all off — a rave from Dusk, to Dawn. <br><br>These initiatives are a few amongst many others that our Faculty Committee plans for our Faculty. While small, they bring warm light to our students’ lives, giving them a little something to look forward to, amidst our busy school life.",
     ]
   }
 ]
 
 const cheers = [
-  "/images/cheers_test.jpg",
-  "/images/cheers_test.jpg",
-  "/images/cheers_test.jpg",
-  "/images/cheers_test.jpg",
-  "/images/cheers_test.jpg",
-  "/images/test.jpeg",
+  "/images/Apollo/apollo_cheer_1.jpg",
+  "/images/Apollo/apollo_cheer_2.jpg",
+  "/images/Apollo/apollo_cheer_3.jpg",
+  "/images/Apollo/apollo_cheer_4.jpg",
+  "/images/Apollo/apollo_cheer_5.jpg",
+  "/images/Apollo/apollo_cheer_6.jpg",
+  "/images/Apollo/apollo_cheer_7.jpg",
 ]
 
 const showOverlay = ref(true)

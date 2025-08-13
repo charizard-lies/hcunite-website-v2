@@ -1,8 +1,7 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, computed, onBeforeUnmount } from 'vue'
 import DropdownMenu from './components/DropdownMenu.vue'
 import MenuItem from './components/MenuItem.vue'
-import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 //routing data
@@ -13,11 +12,11 @@ const menuItems = [
   { 
     label: 'STUDENTS\' COUNCIL',
     external: false,
-    to: '/council52',
+    to: '/council51',
     subitems: [
       // {label: '52nd HCSC', external: false, to: '/council52'},
       {label: '51st HCSC', external: false, to: '/council51'},
-      // {label: '50th HCSC', external: false, to: '/council50'},
+      {label: '50th HCSC', external: false, to: '/council50'},
       // {label: '49th HCSC', external: false, to: '/council49'},
       // {label: '48th HCSC', external: false, to: '/council48'},
     ]
@@ -29,15 +28,43 @@ const menuItems = [
     subitems: [
       {label: 'About', external: false, to: '/faculties'},
       {label: 'Apollo', external: false, to: '/apollo'},
-      {label: 'Ares', external: false, to: '/'},
-      {label: 'Artemis', external: false, to: '/'},
-      {label: 'Athena', external: false, to: '/'},
+      {label: 'Ares', external: false, to: '/ares'},
+      {label: 'Artemis', external: false, to: '/artemis'},
+      {label: 'Athena', external: false, to: '/athena'},
     ]
   },
   { label: 'SODACHE', external: false, to: '/sodache'  },
   { label: 'ELECTIONS', external: false, to: '/elections'  },
   { label: 'IMPORTANT LINKS', external: false, to: '/links'  }
 ]
+
+const isAtTop = ref(true);
+const isVisible = ref(true);
+const lastScrollY = ref(0);
+
+const handleScroll = () => {
+  const currentY = window.scrollY;
+
+  // Detect top state
+  isAtTop.value = currentY <= 30;
+
+  // Detect scroll direction for hide/show
+  if (currentY > lastScrollY.value && currentY > 100) {
+    isVisible.value = false; // scrolling down
+  } else {
+    isVisible.value = true; // scrolling up
+  }
+
+  lastScrollY.value = currentY;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
 
 //nav logic
 const handleToggle = (index) => {
@@ -130,9 +157,16 @@ const bgClass = computed(() => {
 
 <template>
   <div class="min-h-screen flex flex-col overflow-x-hidden overflow-y-scroll custom-scroll-hide" :class="bgClass">
-    <nav class="w-full fixed py-5 px-6 z-50">
+    <nav 
+    class="w-full fixed py-5 px-6 z-50 transition-all duration-500" 
+    :class="{
+      '-translate-y-full': !isVisible,
+    }"
+    >
       <!-- inner box -->
-      <div class="w-full backdrop-blur-xl flex flex-row justify-between m-auto px-5 py-3 rounded-xl" :class="navbarClass">
+      <div 
+      class="w-full flex flex-row justify-between m-auto px-5 py-3 rounded-xl transition-all duration-500" 
+      :class="navbarClass + (isAtTop? ' text-white !bg-transparent': ' backdrop-blur-xl')">
         <!-- logo -->
         <div class="text-2xl font-inter font-black lg:text-4xl transition-colors duration-300" :class="logoClass"><router-link to="/">HCUNITE</router-link></div>
         <!-- headers -->
@@ -170,7 +204,7 @@ const bgClass = computed(() => {
       <router-view />
     </main>
 
-    <footer class="px-10 py-10 text-inter text-center" :class="footerClass">
+    <footer class="px-10 py-10 text-inter text-center transition-all duration-500" :class="footerClass">
       <div class="font-semibold text-md lg:text-xl my-3">
         CHECK OUT OUR OTHER PLATFORMS FOR MORE
       </div>

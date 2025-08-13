@@ -119,8 +119,8 @@
         <p class="mt-4">College Reception (Emergency Contact): 6468 3955</p>
         <div class="py-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
             <div class="relative rounded-xl overflow-hidden scale-100 hover:shadow-xl hover:scale-105 transition-all duration-500" >
-                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="../assets/links_done_4/map.jpeg" alt="">
-                <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white bg-gradient-to-t from-black to-transparent">
+                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-full rounded-xl aspect-auto object-cover object-center" src="../assets/links/map.jpeg" alt="">
+                <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white lg:bg-gradient-to-t from-black to-transparent">
                     <div class="z-20">
                         <h3>School Map</h3>
                         <p>For all your navigation needs</p>
@@ -134,8 +134,8 @@
                 
             </div>
             <div class="relative rounded-xl overflow-hidden scale-100 hover:shadow-xl hover:scale-105 transition-all duration-500" >
-                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="../assets/links_done_4/handbook.jpg" alt="">
-                <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white bg-gradient-to-t from-black to-transparent">
+                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-full rounded-xl aspect-auto object-cover object-center" src="../assets/links/handbook.jpg" alt="">
+                <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white lg:bg-gradient-to-t from-black to-transparent">
                     <div class="z-20">
                         <h3>C1 Handbook</h3>
                         <p>Your Trusty Guide</p>
@@ -149,8 +149,8 @@
                 
             </div>
             <div class="relative rounded-xl overflow-hidden scale-100 sm:col-span-2 xl:col-span-1 hover:shadow-xl hover:scale-105 transition-all duration-500" >
-                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-auto rounded-xl aspect-auto object-cover object-center" src="../assets/links_done_4/sodache.JPG" alt="">
-                <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white bg-gradient-to-t from-black to-transparent">
+                <img class="relative z-0 w-full h-30 lg:h-60 xl:h-full rounded-xl aspect-auto object-cover object-center" src="../assets/links/sodache.JPG" alt="">
+                <div class="flex flex-row w-full justify-between py-4 lg:px-4 lg:absolute lg:bottom-0 lg:text-white lg:bg-gradient-to-t from-black to-transparent">
                     <div class="z-20">
                         <h3>SODACHE</h3>
                         <p>#WHYHC</p>
@@ -167,8 +167,8 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/uUVJvbQKMLs" title="Hwa Chong Batch Dance Music Video 2024 - Dance The Night" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <iframe class="w-full aspect-video" src="https://www.youtube.com/embed/Mu08w9yaF_g" title="Studio Ardent Orientation montage 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/uUVJvbQKMLs" title="Hwa Chong Batch Dance Music Video 2024 - Dance The Night" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="w-full aspect-video rounded-xl" src="https://www.youtube.com/embed/Mu08w9yaF_g" title="Studio Ardent Orientation montage 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         
     </section>

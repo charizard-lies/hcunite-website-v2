@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-xl border-apollo border-1 overflow-hidden flex flex-col lg:flex-row">
+  <div class="rounded-xl border-1 overflow-hidden flex flex-col lg:flex-row" :class="(isMobile? '': 'max-h-[70vh] ') + borderClass">
     <!-- Mobile (horizontal) -->
     <div v-if="isMobile" class="relative overflow-hidden">
       <div class="absolute top-0 left-0 h-full w-28 z-10 bg-linear-to-r from-white to-transparent pointer-events-none"></div>
@@ -16,15 +16,15 @@
         </svg>
       </div>
 
-      <div ref="mobileContainer" class="flex flex-row gap-0 snap-x snap-mandatory overflow-x-auto scroll-smooth custom-scroll-hide border-apollo border-b-1 " @scroll.passive="onMobileScroll">
+      <div ref="mobileContainer" class="flex flex-row gap-0 snap-x snap-mandatory overflow-x-auto scroll-smooth custom-scroll-hide border-b-1 " :class="borderClass" @scroll.passive="onMobileScroll">
         <!-- spacer -->
         <div class="shrink-0 w-[40%]"></div>
 
         <div v-for="(event, i) in events" 
         :key="i" 
         :ref="el => eventRefs[i] = el"
-        class="snap-center text-center px-10 py-4 whitespace-nowrap border-apollo border-r-1" 
-        :class="[i === events.length - 1 ? 'border-none' : '']"
+        class="snap-center text-center px-10 py-4 whitespace-nowrap border-r-1" 
+        :class="[i === events.length - 1 ? 'border-none ' : ''] + borderClass"
         >
             <h3 class="text-lg sm:text-3xl">
                 {{ event.name }}
@@ -47,16 +47,17 @@
             v-for="(event, i) in events"
             :key="i"
             @click="onSelect(i)"
-            class="relative overflow-hidden group cursor-pointer px-4 py-4 border-apollo border-b-1 border-r-1 last:border-b-0 shrink-0 last:grow"
+            class="relative overflow-hidden group cursor-pointer px-4 py-4 border-b-1 border-r-1 last:border-b-0 shrink-0 last:grow"
+            :class="borderClass"
             >
                 <h3 
-                :class="selectedIndex === i ? 'translate-x-8' : ''"
-                class="relative text-black transform group-hover:translate-x-8 transition-transform duration-300 ease-in-out z-10">
+                :class="selectedIndex === i ? 'translate-x-8 '+textClass : ''"
+                class="relative transform group-hover:translate-x-8 transition-all duration-300 ease-in-out z-10">
                     {{ event.name }}
                 </h3>
                 <div 
-                :class="selectedIndex === i ? 'translate-x-0' : '-translate-x-full'"
-                class="z-0 absolute inset-0 bg-apollo transform transition-transform duration-300 ease-in-out"
+                :class="(selectedIndex === i ? 'translate-x-0 ' : '-translate-x-full ') + bgClass"
+                class="z-0 h-full absolute inset-0 transform transition-transform duration-300 ease-in-out"
                 ></div>
             </div>
         </div>
@@ -65,9 +66,10 @@
 
     <!-- pictures -->
     <div class="w-full lg:w-[50%] p-4 lg:max-h-none relative">
-        <div v-if="!isMobile" class="absolute top-8 right-8 text-white text-sm px-2 py-1 z-10">
+        <div class="absolute top-8 right-8 text-white text-sm px-2 py-1 z-10">
             <div class="flex flex-row flex-nowrap gap-2">
-                <svg 
+                <svg
+                v-if="!isMobile" 
                 @click="scrollImageLeft" 
                 width="32px" 
                 height="32px" 
@@ -76,6 +78,7 @@
                 </svg>
                 <p class="m-auto w-8 text-center">{{ currentImageIndex + 1 }}/{{ currentImages.length }}</p>
                 <svg 
+                v-if="!isMobile"
                 @click="scrollImageRight" 
                 width="32px" 
                 height="32px" 
@@ -106,8 +109,8 @@
                     >
                     </div>
                     <div class="absolute text-white inset-0 p-4 transition-opacity duration-500" :class="overlayToggles[selectedIndex][i] ? 'opacity-100' : 'opacity-0'" >
-                        <p>
-                            {{events[selectedIndex].text[i]}}
+                        <p v-html="events[selectedIndex].text[i]" :class="isMobile? '':'w-[75%]'">
+                            
                         </p>
                     </div>
                     
@@ -135,7 +138,8 @@ const props = defineProps({
           Array.isArray(e.images) &&
           Array.isArray(e.text)
       )
-  }
+  },
+  faculty: String,
 })
 
 const events = props.events
@@ -144,6 +148,36 @@ const isMobile = ref(window.innerWidth < 1024)
 const eventRefs = []
 const mobileContainer = ref(null)
 const visibleIndex = ref(null)
+
+const borderClass = computed(() => {
+  const map = {
+    apollo: 'border-apollo',
+    ares: 'border-ares',
+    artemis:   'border-artemis',
+    athena:    'border-athena'
+  }
+  return map[props.faculty] || ''
+})
+
+const bgClass = computed(() => {
+  const map = {
+    apollo: 'bg-apollo',
+    ares: 'bg-ares',
+    artemis: 'bg-artemis',
+    athena: 'bg-athena'
+  }
+  return map[props.faculty] || ''
+})
+
+const textClass = computed(() => {
+  const map = {
+    apollo: 'text-black',
+    ares: 'text-white',
+    artemis: 'text-white',
+    athena: 'text-white'
+  }
+  return map[props.faculty] || ''
+})
 
 //mobile
 function scrollEventLeft() {
@@ -284,12 +318,20 @@ function handleResize() {
   isMobile.value = window.innerWidth < 1024
 }
 
-onMounted(() => {
+onMounted(async () => {
   window.addEventListener('resize', handleResize)
   selectedIndex.value = 0
+
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    await nextTick()
+    // Ensure DOM is ready before measuring
+    if (eventRefs[0]) {
+      eventRefs[0].scrollIntoView({ behavior: 'instant', inline: 'center', block: 'nearest' })
+    }
+  }
 })
 
-onUnmounted(() => {n
+onUnmounted(() => {
   window.removeEventListener('resize', handleResize)
 })
 </script>
