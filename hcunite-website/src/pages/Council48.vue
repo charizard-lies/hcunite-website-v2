@@ -55,7 +55,7 @@ import CouncilCard from '../components/CouncilCard.vue';
             EXCO
         </h1>
         <div class="w-full relative">
-            <img src="../assets/48th_done_54/48th_ExCo.png" alt="background" class="z-0 w-full max-w-[900px] m-auto object-center object-contain">
+            <img src="../assets/48th/48th_ExCo.png" alt="background" class="z-0 w-full max-w-[900px] m-auto object-center object-contain">
         </div>
         <div class="p-6">
             <p class="centered-text-block">
