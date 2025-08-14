@@ -5,7 +5,7 @@ import CouncilCard from '../components/CouncilCard.vue';
 <template>
 
 <!-- hero section -->
-    <section class="mt-30 pb-12">
+    <!-- <section class="mt-30 pb-12">
         <h1 class="z-20 text-black lg:text-8xl w-full text-center">48TH STUDENTS' COUNCIL</h1>
     </section>
     
@@ -49,7 +49,7 @@ import CouncilCard from '../components/CouncilCard.vue';
 
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
-    <!-- exco -->
+    
     <section ref="nse" class="pb-12 px-3">
         <h1 class="text-center py-12">
             EXCO
@@ -107,7 +107,7 @@ import CouncilCard from '../components/CouncilCard.vue';
         </div>
     </section>
 
-    <!-- ecaco -->
+    
     <section ref="ecaco" class="pb-12 px-3">
         <div class="aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
@@ -167,7 +167,7 @@ import CouncilCard from '../components/CouncilCard.vue';
         </div>
     </section>
 
-    <!-- pubco -->
+    
     <section ref="pubco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
@@ -225,7 +225,7 @@ import CouncilCard from '../components/CouncilCard.vue';
         </div>
     </section>
 
-    <!-- secco -->
+    
     <section ref="secco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
@@ -285,7 +285,7 @@ import CouncilCard from '../components/CouncilCard.vue';
         </div>
     </section>
 
-    <!-- snr -->
+    
     <section ref="snr" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
@@ -343,10 +343,10 @@ import CouncilCard from '../components/CouncilCard.vue';
             </div>
             
         </div>
-    </section>
+    </section> -->
 
     <!-- welco -->
-    <section ref="welco" class="pb-12 px-3 ">
+    <!-- <section ref="welco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/20 lg:tracking-[0.4em] lg:text-8xl/40">
@@ -401,5 +401,5 @@ import CouncilCard from '../components/CouncilCard.vue';
             </div>
             
         </div>
-    </section>
+    </section> -->
 </template>
