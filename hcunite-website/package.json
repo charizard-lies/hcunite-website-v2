@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "glob": "^11.0.3",
     "pinia": "^3.0.3",
     "tailwind-scrollbar-hide": "^4.0.0",
     "tailwindcss": "^4.1.11",

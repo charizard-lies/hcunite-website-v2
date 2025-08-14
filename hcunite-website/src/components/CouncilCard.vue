@@ -23,11 +23,22 @@ const props = defineProps({
 const formattedName = props.name
   .replace(/,/g, '')
   .replace(/\s+/g, '+')
-const attempt = '../assets/'+props.year+'/'+props.council+'_'+formattedName+'.jpg'
-const imageUrl = new URL(
-  attempt,
-  import.meta.url
-).href
+
+function getImageUrl() {
+  const base = `../assets/${props.year}/${props.council}_${formattedName}`
+  const exts = ['.jpg', '.JPG', '.JPEG', '.jpeg', '.png', '.PNG', '.webp']
+
+  for (const ext of exts) {
+    try {
+      return new URL(base + ext, import.meta.url).href
+    } catch {}
+  }
+
+  console.log('imageurl not found')
+  return '' // fallback if not found
+}
+
+const imageUrl = getImageUrl()
 
 // function test(){
 //     console.log(formattedName)
