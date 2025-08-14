@@ -367,10 +367,10 @@ const councillors = {
             :description="data['description']" 
             />
         </div>
-    </section>
+    </section> -->
 
     <!-- ecaco -->
-    <section ref="ecaco" class="pb-12 px-3">
+    <!-- <section ref="ecaco" class="pb-12 px-3">
         <div class="aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.3em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/25">
@@ -401,10 +401,10 @@ const councillors = {
             :description="data['description']" 
             />
         </div>
-    </section>
+    </section> -->
 
     <!-- pubco -->
-    <section ref="pubco" class="pb-12 px-3 ">
+    <!-- <section ref="pubco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.4em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.2em] lg:text-8xl/25">
@@ -435,10 +435,10 @@ const councillors = {
             :description="data['description']" 
             />
         </div>
-    </section>
+    </section> -->
 
     <!-- secco -->
-    <section ref="secco" class="pb-12 px-3 ">
+    <!-- <section ref="secco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
@@ -471,10 +471,10 @@ const councillors = {
             :description="data['description']" 
             />
         </div>
-    </section>
+    </section> -->
 
     <!-- snr -->
-    <section ref="snr" class="pb-12 px-3 ">
+    <!-- <section ref="snr" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
@@ -507,10 +507,10 @@ const councillors = {
             :description="data['description']" 
             />
         </div>
-    </section>
+    </section> -->
 
     <!-- welco -->
-    <section ref="welco" class="pb-12 px-3 ">
+    <!-- <section ref="welco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/20 lg:tracking-[0.4em] lg:text-8xl/40">
