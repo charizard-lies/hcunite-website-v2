@@ -338,7 +338,7 @@ const councillors = {
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
     <!-- nse -->
-    <section ref="nse" class="pb-12 px-3">
+    <!-- <section ref="nse" class="pb-12 px-3">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
             <img src="/images/51st/51st_NSE.jpg" alt="background" class="w-full h-full z-0 object-cover brightness-90">
             <h1 class="absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-3xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/33">
@@ -541,5 +541,5 @@ const councillors = {
             :description="data['description']" 
             />
         </div>
-    </section>
+    </section> -->
 </template>
