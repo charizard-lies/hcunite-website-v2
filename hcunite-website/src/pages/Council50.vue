@@ -236,7 +236,7 @@ const councillors = {
     <section class="mt-30 pb-12">
         <h1 class="z-20 text-black lg:text-8xl w-full text-center">50TH STUDENTS' COUNCIL</h1>
         <div class="w-full h-screen relative">
-            <img src="../assets/50th/50th_HCSC.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
+            <img src="/images/50th/50th_HCSC.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
         </div>
         <div class="p-6">
             <p class="centered-text-block">
@@ -302,33 +302,33 @@ const councillors = {
     <section class="py-12 px-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="../assets/51st/51st_NSE.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/51st/51st_NSE.jpg" alt="">
                     <h2 class="ml-6 font-semibold">EXCo</h2>
                     <button @click="$refs.nse.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:py-3 sm:max-w-[50%] md:max-w-[30%] lg:text-sm sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="../assets/51st/51st_EcaCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/51st/51st_EcaCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">ECACO</h2>
                     <button @click="$refs.ecaco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="../assets/51st/51st_PubCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/51st/51st_PubCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">PUBCO</h2>
                     <button @click="$refs.pubco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="../assets/51st/51st_SecCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/51st/51st_SecCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">SECCO</h2>
                     <button @click="$refs.secco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="../assets/51st/51st_SnR.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/51st/51st_SnR.jpg" alt="">
                     <h2 class="ml-6 font-semibold">SNR</h2>
                     <button @click="$refs.snr.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="../assets/51st/51st_WelCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/51st/51st_WelCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">WELCO</h2>
                     <button @click="$refs.welco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
@@ -340,7 +340,7 @@ const councillors = {
     <!-- nse -->
     <section ref="nse" class="pb-12 px-3">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/51st/51st_NSE.jpg" alt="background" class="w-full h-full z-0 object-cover brightness-90">
+            <img src="/images/51st/51st_NSE.jpg" alt="background" class="w-full h-full z-0 object-cover brightness-90">
             <h1 class="absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-3xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/33">
                 THE EXECUTIVE<br>
                 COMMITTEE<br>
@@ -372,7 +372,7 @@ const councillors = {
     <!-- ecaco -->
     <section ref="ecaco" class="pb-12 px-3">
         <div class="aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.3em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/25">
                 THE EXTENDED-<br>
                 COUNCIL<br>
@@ -406,7 +406,7 @@ const councillors = {
     <!-- pubco -->
     <section ref="pubco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.4em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.2em] lg:text-8xl/25">
                 THE PUBLICATIONS<br>
                 AND PUBLICITY<br>
@@ -440,7 +440,7 @@ const councillors = {
     <!-- secco -->
     <section ref="secco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE STUDENT<br>
                 ENGAGEMENT<br>
@@ -476,7 +476,7 @@ const councillors = {
     <!-- snr -->
     <section ref="snr" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE SOCIAL<br>
                 AND RELATIONS<br>
@@ -512,7 +512,7 @@ const councillors = {
     <!-- welco -->
     <section ref="welco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="../assets/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/20 lg:tracking-[0.4em] lg:text-8xl/40">
                 THE WELFARE<br>
                 COMMITTEE<br>

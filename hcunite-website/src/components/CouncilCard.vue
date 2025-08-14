@@ -25,7 +25,7 @@ const formattedName = props.name
   .replace(/\s+/g, '+')
 
 function getImageUrl() {
-  const base = `/src/assets/${props.year}/${props.council}_${formattedName}`
+  const base = `/images/${props.year}/${props.council}_${formattedName}`
   const exts = ['.jpg', '.JPG', '.JPEG', '.jpeg', '.png', '.PNG', '.webp']
 
   for (const ext of exts) {
