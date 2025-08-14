@@ -25,7 +25,7 @@ const formattedName = props.name
   .replace(/\s+/g, '+')
 
 function getImageUrl() {
-  const base = `../assets/${props.year}/${props.council}_${formattedName}`
+  const base = `/src/assets/${props.year}/${props.council}_${formattedName}`
   const exts = ['.jpg', '.JPG', '.JPEG', '.jpeg', '.png', '.PNG', '.webp']
 
   for (const ext of exts) {
@@ -39,6 +39,7 @@ function getImageUrl() {
 }
 
 const imageUrl = getImageUrl()
+// const imageUrl = '../src/assets/51st/EcaCo_Wui+Jeongjun.jpg'
 
 // function test(){
 //     console.log(formattedName)
