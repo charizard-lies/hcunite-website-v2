@@ -26,24 +26,19 @@ const formattedName = props.name
 
 function getImageUrl() {
   const base = `/images/${props.year}/${props.council}_${formattedName}`
-  const exts = ['.jpg', '.JPG', '.JPEG', '.jpeg', '.png', '.PNG', '.webp']
+  const exts = ['.jpg', '.png', '.webp']
 
   for (const ext of exts) {
     try {
       return new URL(base + ext, import.meta.url).href
-    } catch {}
+    } catch {
+      console.log(URL(base + ext, import.meta.url).href)
+    }
   }
-
-  console.log('imageurl not found')
   return '' // fallback if not found
 }
 
 const imageUrl = getImageUrl()
-// const imageUrl = '../src/assets/51st/EcaCo_Wui+Jeongjun.jpg'
-
-// function test(){
-//     console.log(formattedName)
-// }
 
 const formattedDescription = computed(() => {
   if (!props.description) return ''

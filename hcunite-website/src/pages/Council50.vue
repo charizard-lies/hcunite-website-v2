@@ -2,236 +2,262 @@
 import CouncilCard from '../components/CouncilCard.vue';
 
 const councillors = {
-    "NSE": {
-        "Seah Jin Rong":{
+    "ExCo": {
+        "Koh Ting Jia": {
             "position": "President, EleCo Attaché",
-            "description": "Hi I’m Jin Rong. Although I’m never sleeping enough, I’ll never sleep on your needs ‼️‼️ https://www.urbandictionary.com/define.php?term=sleep"
+            "description": "HUAT’S 🧧UP 🆙 EVERYONE I’m Ting Jia 😆! Despite being a scolio-sis 🧍🏻‍♀️, I got your back 🩻 and will do my utmost best in serving 💅 the school 🏫! While I can’t dance well, Joel sure can DisCo 🕺!"
         },
-        "Hor Sze Jia":{
-            "position": "Vice President, MAFCo Attaché",
-            "description": "Wassup‼️! I’m Sze Jia and I love to sleep 😴💤but I’m never sleeping enough 🥱🥱 (maybe that’s the reason for my height🧍‍♀️ - or lack thereof) BUT that’s only cause I’m always here to serve YOU! 🆙🔝"
+        "Joel Ho Wei Ming": {
+            "position": "Vice President, O1Co Attaché",
+            "description": "Ho… Ho… Ho it's Joel 🎅! Your friendly neighbourhood Santa Claus 🎄 I'm here to bring you gifts all year round 🥳🥳🥳!"
         },
-        "Chua Ying Feng, Daryl":{
+        "Ho Zoan": {
             "position": "General Secretary, O1Co Attaché",
-            "description": "hi i’m daryl. i enjoy hiding behind large pillars while wearing a scary mask to look mysterious."
+            "description": "Hi I'm Zoan, I often sit in Starbucks and do work to feel like a main character… I also think people who sit on Central Plaza floors are cool."
         },
-        "Tan Jin Yi":{
-            "position": "General Secretary, PromCo Attaché",
-            "description": "hi i’m jin yi. 👸🏻🥂🫅🏻 yesterday i was walking past a pillar when i saw a big dark figure and screamed. "
+        "Ng Tze Kiat, David": {
+            "position": "General Secretary, MAFCo Attaché",
+            "description": "Hi I'm David, I often sit on the Central Plaza floor to feel like a main character… I also think people who sit in Starbucks and do work are cool."
         },
-        "Lai Sin Yie":{
-            "position": "General Treasurer , OHCo Attaché",
-            "description": "hi i’m sin yie. i enjoy counting money at benches, but i lost count yesterday when i heard a loud scream."
+        "Chua Wei Jun": {
+            "position": "General Treasurer, PromCo Attaché",
+            "description": "Hi I'm Wei Jun, I often sit at the Council benches to count money and feel like a main character… I also think people who sit at the benches are cool."
+        },
+        "Charmaine Chew": {
+            "position": "PubCo Chairperson, CNYCo Attaché",
+            "description": "Hi I'm Charmaine and the CHAR in my name stands for Chewy Hewey Awey Rawr 🙀🥶😘"
+        },
+        "Tew Yang Zhi, Coen": {
+            "position": "SECCo Chairperson, TDCo Attaché",
+            "description": "Blackpink in your area? More like SECCO in your area. SODACHE is my passion, and yours should be too!"
+        },
+        "Brendan Lau Zhengxin": {
+            "position": "SnR Chairperson, OHCo Attaché",
+            "description": "Hay there 👨‍🌾 i’m Brendan and am a happy member of the SnR farm :D Let’s hope for a great harvest this council term and I'll strive to put a smile on your face :)"
+        },
+        "Rachelle Sim Kye Yee": {
+            "position": "WelCo Chairperson, MAFCo Attaché",
+            "description": "Hello I’m Rachelle — sorry to disappoint but it’s still pronounced as Rachel 😅 Rest assured that my dedication to serving y’all is never-ending (just like my Duolingo streak 💯)"
+        },
+        "Wee Cohen": {
+            "position": "CIPC President, PromCo Member",
+            "description": "Hello everyone I’m Cohen!! I’m here to create a hwa chong family that loves to give back to our community 🫶🏻 I live by a simple motto: weeeeeeeee 😆!!"
+        },
+        "Foo Yong Huei Rebecca": {
+            "position": "Green Council President, CNYCo Member",
+            "description": "Hi I’m Rebecca! I love green, earth and geog (I kind of want to be a farmer) let’s make hwach sustainable together!"
+        },
+        "Chen Yufan": {
+            "position": "SNEC President, EleCo Member",
+            "description": "Hello I’m Yufan 😆! Once again my only personality trait is I dislike all sweet food 😞 (yes my favourite drink is plain water 💧) Anyways I’m here to connect SNEC to Council yay 🫵🫵"
         }
     },
     "EcaCo": {
-        "Lee Wei Yi": {
-            "position": "President of Students’ National Education Council (SNEC), OHCo Member",
-            "description": "onionhaseyo, I'm Wei Yi 👋👋🧅\n\nSNEC is home truly 🏠 🇸🇬🇸🇬\n\nI'm here to spread the ❤️‍🔥 for 🇸🇬 with my oppar 🔥🔥And I'm not the most kaypoh in council"
+        "Wee Cohen": {
+            "position": "President of Community Involvement Programme Council (CIPC), PromCo Member",
+            "description": "Hello everyone I’m Cohen!! I’m here to create a hwa chong family that loves to give back to our community 🫶🏻 I live by a simple motto: weeeeeeeee 😆!!"
         },
-        "Leow Junn Kai, Jonathan": {
-            "position": "President of Green Council, EleCo Member",
-            "description": "GREENtings everyone, I’m Jonathan and I’m one of the two proud members of Council’s very own SUSco (Sustainability Committee) and the caretaker of the HCSC lounge! I’m here to infect you with love for AUTUMM 🍂🍂🍂and the beautiful earth🌐!"
+        "Foo Yong Huei Rebecca": {
+            "position": "President of Green Council, CNYCo Member",
+            "description": "Hi I’m Rebecca! I love green, earth and geog (I kind of want to be a farmer) let’s make hwach sustainable together!"
         },
-        "Mock Yee Ken, Ethan": {
-            "position": "President of Values-In-Action Council (VIAC), O1Co Member",
-            "description": "Hello I’m Mock 😝 and as the resident fisherman of HCSC, I have to work with a KOI fish for my council term🐟 I’m here to spread the love 💙 for service 🫂 SEE YOU AROUND and on @viacouncil 🩵😎"
+        "Chen Yufan": {
+            "position": "President of Student National Education Council (SNEC), EleCo Member",
+            "description": "Hello I’m Yufan 😆! Once again my only personality trait is I dislike all sweet food 😞 (yes my favourite drink is plain water 💧) Anyways I’m here to connect SNEC to Council yay 🫵🫵"
         },
-        "Wui Jeongjun": {
-            "position": "Vice-President of Students’ National Education Council (SNEC), CNYCo Member",
-            "description": "onionhasayyo, I'm Jeongjun‼️‼️🧅\n\nSNEC is home surely 🏠🇸🇬🇸🇬\n\nI’m here to spread the love ❤️‍🔥 for  🇸🇬  with my boss 🤪🔥🔥"
+        "Tan Hai Yang": {
+            "position": "Community Involvement Programme Council Attaché, MAFCo Member",
+            "description": "Hai everyone I'm Hai Yang 🌊 feel free to say Hai if you see me around - be it in school or in a comment on your SL proposal 😇😅"
         },
-        "Anya Wong Ann Ya": {
-            "position": "Vice-President of Green Council, TDCo Member",
-            "description": "GREENtings everyone, I’m Anya and I’m two of the two proud members of Council’s very own SUSco (Sustainability Committee) and the great consumer of GC welfare! I’m here to imbue you with love for SPRING 🌱🌱🌱and the beautiful earth🌐!"
+        "Tristan Chua Zi Heng": {
+            "position": "Green Council Attaché, O1Co Member",
+            "description": "Hello I'm Tristan! If you need me to fix something, just sound it out! (Relationships and grades not included 😔)"
         },
-        "Koi Xin Yi Tricia": {
-            "position": "Vice-President of Values-In-Action Council (VIAC), PromCo Member",
-            "description": "HELLO! I’m Tricia and as the funnier one in the duo, Ethan likes to MOCK me​​😱 I’m here to spread laughters and the love 💙 for service 🫂 SEE YOU AROUND and on @viacouncil 🩵😽🫶"
+        "Arin Ong Zi Yun": {
+            "position": "Student National Education Council Attaché, OHCo Member",
+            "description": "Helloooo I’m Arin! I enjoy taekwondo and I secretly have an insane number of jackets 😄! Feel free to hmu and say hi and I’m sure my response will not let you down 🤠"
         },
-        "Seah Jin Rong": {
+        "Koh Ting Jia": {
             "position": "NSE Attaché, EleCo Attaché",
-            "description": "Hey everyone I’m Jin Rong, but you can call me seah cuz I love Singapore, recycling and service so much siaa 🫶🏼🫶"
+            "description": "Hello I’m Ting Jia and I love Singapore 🇸🇬, cookies 🍪 and recycling ♻️!"
         }
     },
-    "PubCo":{
-        "Dan Ming Zhen": {
+    "PubCo": {
+        "Charmaine Chew": {
             "position": "Chairperson, CNYCo Attaché",
-            "description": "hi i’m ming zhen and i’m a good boss that doesn’t abuse my sec-tres or my attaché. I oso don't owe anyone anything"
+            "description": "Hi I’m Charmaine and the char in my name stands for chewy hewey awey rawr 🙀🥶😘"
         },
-        "Madeline Soo Qian Han": {
-            "position": "Secretary-Treasurer, OHCo Member, CNYCo Member",
-            "description": "hi i'm madeline 🫢 and i’m a good sec-tres who is abused by my boss 😓. i see a sleep deprived coder staring at me… mz owes me my medical bills 💻🤕"
+        "Yeo Zhi An Edmund": {
+            "position": "Secretary-Treasurer, OHCo Member, EleCo Member",
+            "description": "Hi I’m Edmund and the edm in my name stands for eewey dewey mewey moo 🔥‼️😘"
         },
-        "Chua Ying Feng, Daryl": {
-            "position": "NSE Attaché, O1Co Attaché",
-            "description": "Hi I’m Daryl and I’m a “good” Attaché who is abused by both my boss and my sec-tres. mz owes me a brawl pass and an nric"
+        "Ho Zoan": {
+            "position": "NSE Attaché, O1Co Member",
+            "description": "Hi I’m Zoan and the zo in my name stands for zewey oewey awey nawrr 😎🥵😘"
         },
-        "Chia Hao Yang, Kyle": {
-            "position": "Designer, OHCo Member, EleCo Member",
-            "description": "Hi I’m Kyle 😎 and I’m a good designer who is 549cm tall 👢🎀💄💅 i see both an artist and a coder staring at each other…weird…🫰 mz owes me his firstborn 👶🏼"
+        "Ho Kelly": {
+            "position": "Media Director, EleCo Secretary-Treasurer, MAFCo Member",
+            "description": "Did you know that MD stands for Much Doing (because we do so much) 🏋️💪😘"
         },
-        "Declan Ng Kian Heng": {
-            "position": "Video Editor, OHCo Member, EleCo Member",
-            "description": "hi! i’m declan and i’m a councilor by day, superhero by night. i see a sleep deprived artist on the streets... mz owes me a new CANON R8 📸"
+        "Keon Tan Kai Eik": {
+            "position": "Media Director, CNYCo Chairperson, MAFCo Member",
+            "description": "Did you know that MD stands for Myfavouriteeventiscny and Dbesteventiscny 🤯🧧😘"
         },
-        "Kayden Seah Chung Hian": {
-            "position": "Video Editor, MAFCo Secretary-Treasurer, EleCo Member",
-            "description": "hi i'm kayden 😇🤪 and you make me sweat 😅 every time i edit cos you look way too hot on cam 💥💥 mz owes me my sanity 😭😭"
+        "Tan Li Zhi, Pristine": {
+            "position": "Media Director, CNYCo Secretary-Treasurer, TDCo Member",
+            "description": "Did you know that MD stands for Mala Dala woahh MDs so spicy 🥵🌶️😘"
         },
-        "Celeste Wong Xin Yi": {
-            "position": "Video Editor, PromCo Secretary-Treasurer, CNYCo Member",
-            "description": "Hi I’m Celeste 😚🌠 and I think you should catch reels 🎞️ , not feels 😉🧏🏻‍♀️ 💯 Ming Zhen owes me a trip to the Four Seasons Orlando 😇💆🏻‍♀️🧖🏻‍♀️ 👸🏻🥂🤴🏻"
+        "Amandia Lim Wan Zhen": {
+            "position": "MOCH, OHCo Member, EleCo Member",
+            "description": "Hello I’m Amandia and MOCH in my name stands for Mala Obsessed Carrot Hater 🥕🤮😘"
         },
-        "Lim Jin Xin": {
-            "position": "Video Editor, OHCo Member, EleCo Secretary-Treasurer",
-            "description": "hi i’m jinxin 😛😈 and i think you should catch feels for our reels though ☝️😵  mz owes me acai"
+        "Bek Joon Hao": {
+            "position": "MOCH, OHCo Chairperson, EleCo Member",
+            "description": "Hello I’m Joon Hao and MOCH in my name stands for Masterful Optics Cinematic Highlights 📹📷😘"
         },
-        "Wong Jun Heng": {
-            "position": "Video Editor, OHCo Secretary-Treasurer, CNYCo Member",
-            "description": "hi I’m Jun Heng and mz owes me an attack helicopter with giraffe pilots 🦒🛩️🌇"
+        "Javier Cheng Kai Heng": {
+            "position": "MOCH, OHCo Member, CNYCo Member",
+            "description": "Hello I’m Javier and the MOCH in my name stands for Mister Openhouse and Chinesenewyear Huatness 🏠 🧧😘"
         },
-        "Xu Shaozhe": {
-            "position": "Video Editor, MAFCo Member, O1Co Member",
-            "description": "hi i’m shaozhe 😙 and mz owes me an icloud subscription for my 170gb worth of photos and 10gb of procreate!!!!!!😠😠😠😠 i also always spot someone looking at maf proposals during breaks 🤔🤔"
-        },
-        "Zhu Zixuan": {
-            "position": "Video Editor, MAFCo Member, EleCo Member",
-            "description": "Hi I’m Zixuan 😄😄 and I like cameras and skateboards 😋😋 because they both hurt my wrist 📸🛹. Ming Zhen owes me A5 wagyu, a plane, a skateboard, a plane and a house!🫶🌚🔥🔥"
+        "Yang Peiduo": {
+            "position": "MOCH, OHCo Member, O1Co Member",
+            "description": "Hello I'm Peiduo and the MOCH in my name stands for Muffin Obsession and Chocolate High 🧁🍫😘"
         }
     },
     "SecCo": {
-        "Foo Ying Han": {
+        "Tew Yang Zhi, Coen": {
             "position": "Chairperson, TDCo Attaché",
-            "description": "Hi, I’m Ying Han!😻😻 No, it’s not me who fixes the spoilt sink at the BPA, but the one with ‘SEC’ on their pink shirt…😬😬#teamsecco loading… (9.09%)"
+            "description": "Blackpink in your area? More like SECCO in your area. SODACHE is my passion and yours should be too!"
         },
-        "Chng Ming Cong Jerrell": {
-            "position": "Secretary-Treasurer, OHCo Member, O1Co Member",
-            "description": "Hi, I’m Jerrell 🥳🥳 No, it’s not me who goes ‘YAYYY’👍👍, but the one with ‘ATT’ on their pink shirt…✨#teamsecco💕loading… (18.18%) Also the most kaypoh is bluffing 🧐"
+        "Kaleb Teo Tze Hsiang": {
+            "position": "Secretary-Treasurer, OHCo Member, EleCo Member",
+            "description": "I take Lit to make your lives lit 🔥🔥🔥"
         },
-        "Tan Jin Yi": {
-            "position": "NSE Attaché, PromCo Attaché",
-            "description": "Hi I’m Jin Yi !! 😋😋 No, it’s not me whom we call 老板, but the one with ‘BOSS’ on their pink shirt…🙀#teamsecco⚡ loading… (27.27%)"
-        },
-        "Cedric Tai Hong-E": {
-            "position": "Song I/C, PromCo Chairperson, O1Co Member",
-            "description": "Selamat Pagi! 🎤🏃‍♂️I’m Cedric and I ate Mala Dala🫕 SO I lost my voice and couldn't sing for assembly the next day😭 #teamsecco👨‍🎤 loading… (36.36%) 👸🏻🥂🫅🏻"
-        },
-        "Chen Hui En": {
-            "position": "Song I/C, MAFCo Member, CNYCo Chairperson",
-            "description": "你好! 🎙️🤸‍♀️I’m Hui En, I was frustrated with Cedric’s grating voice 😒 SO I made him eat Mala Dala to shut him up the next day. 🤐 🪩#teamsecco 💫 loading… (45.45%) Luckily I’ve taken 2400 more breaths than Shi Yang 🤛"
-        },
-        "Ang Shao Xuan": {
-            "position": "Dance I/C, OHCo Chairperson, EleCo Member",
-            "description": "HEY I’m shao xuan 🍗🍟🛌 and the “p” in anthea stands for physically coordinated!! 💃💃 #teamsecco 🌠 loading…(54.54%)"
-        },
-        "Anthea Neo Rui En": {
-            "position": "Dance I/C, MAFCo Member, O1Co Member",
-            "description": "HELLO I’m anthea 👏👏👏 and the “g” in shao xuan stands for good at dancing!! 🕺🕺#teamsecco loading… (63.63%)"
-        },
-        "Joy Choo Le Xuan": {
-            "position": "Cheer I/C, TDCo Member, EleCo Chairperson",
-            "description": "HELLO i’m joy, happy and excited😎 and i think ryan loves doing haidilao dances😇😇😁#teamsecco loading… (72.72%) 📣"
-        },
-        "Ryan Lee Min Xing": {
-            "position": "Cheer I/C, PromCo Member, CNYCo Secretary-Treasurer",
-            "description": "hi i am ryan lee and contrary to popular belief, i do not like doing haidilao dances 😭😭🙏#teamsecco loading… (81.81%)"
-        },
-        "Claris Poh": {
-            "position": "Student Engagement Coordinator (SNC), PromCo Member, O1Co Secretary-Treasurer",
-            "description": "hi im claris, your FAVOURITE snc and funnier one during The Late Late Late Show (pls come every tuesday morning). a fun fact about me is i have an snc partner named xavier sheng yichou who likes drake abit too much... happy to serve all of you! #teamsecco⚡ loading… (90.90%)"
-        },
-        "Sheng Yichou": {
-            "position": "Student Engagement Coordinator (SNC), TDCo Secretary-Treasurer, CNYCo Member",
-            "description": "hi im xavier, your favouriter snc! im the funny voice behind TLLLS. a fun fact about me is i have an snc partner named claris poh hci that stepped on a sea urchin 😮😮  looking forward to snc-ing!"
-        }
-    }
-    ,
-    "SnR": {
-        "Tan Yu Ming": {
-            "position": "Chairperson, O1Co Attaché",
-            "description": "HAY THERE! 🧑‍🌾 I’m Yu Ming and together with Linger and Sze Jia, we look after the 🐴🐺🦉🐮 of HCSC… Oh no… what’s happening… Am I turning into a…… ROAR… 🦁"
-        },
-        "Chen Linger": {
-            "position": "Secretary-Treasurer, MAFCo Member, CNYCo Member",
-            "description": "HAYLLO! 👩‍🌾 I’m Linger and together with Yu Ming and Sze Jia, we look after the 🐴🐺🦉🐮 of HCSC… Oh crap, do I hear a roar…? It must be the Hwa Chong ROAR! 🦁"
-        },
-        "Hor Sze Jia": {
+        "Ng Tze Kiat, David": {
             "position": "NSE Attaché, MAFCo Attaché",
-            "description": "HAYAA! 👩‍🌾 I’m Sze Jia and together with Yu Ming and Linger, we look after the 🐴🐺🦉🐮 of HCSC… Um, did I just see Yu Ming turn into a Lion… “ROAR!”"
+            "description": "Hi I’m David, the letters ATT on my pink SECCo shirt actually stand for Anyday Tap Tapcrosscrosspointpoint 🕺 Currently attaché’d to SODACHE 🔗♥️"
         },
-        "Chen Leqi": {
-            "position": "Apollo Faculty Head, OHCo Member",
-            "description": "Good morning! ☀️ I'm Leqi, one of two 🐮 in HCSC! Mirror mirror on the wall, who’s the most divine of them all? This bovine boy! 🐄💥 MOOOO!"
+        "Ng Aaron": {
+            "position": "Student Engagement Coordinator (SNC), O1Co Chairperson, PromCo Member",
+            "description": "Wassup am A a ron and I'm a super necessary councillor, aka SNC, my jokes can be pretty lame but I aargue that I'm hilarious"
         },
-        "Toh Jun Hao": {
+        "Toh Yu Qi": {
+            "position": "Student Engagement Coordinator (SNC), EleCo Chairperson, PromCo Member",
+            "description": "Helloo i’m Yu Qi and SNC stands for super noisy committee 😍 but the noise is to make your life noice-r 🫵"
+        },
+        "Joanne Tan Kai Xin": {
+            "position": "Song I/C, MAFCo Secretary-Treasurer, O1Co Member",
+            "description": "My name is Joanne and I became the Song I/C after I heard a constant humming in class and decided that was my calling 🤔😃"
+        },
+        "Poon Wai Yew Gabriel": {
+            "position": "Song I/C, TDCo Secretary-Treasurer, O1Co Member",
+            "description": "My name is Gabriel, I’m the other Song I/C, and I want to apologise to my classmates for humming manjianghong in class 🙏😭"
+        },
+        "Nicole Yong Xue Min": {
+            "position": "Dance I/C, PromCo Chairperson, CNYCo Member",
+            "description": "Okayyy let’s do this one last time, my name is Nicole Yong, I was bitten by a radioactive spider and for like the last 4 years I’ve been the one and only kid who has been going without a proper sleep schedule, you wouldn’t want to know the rest"
+        },
+        "Liu Rui Yi Winnie": {
+            "position": "Dance I/C, TDCo Member, O1Co Member",
+            "description": "Hi I’m Winnie, your silly goofy dance I/C 😮‍💨 who delights in the whimsical and enjoys drowning herself in every shade of pink"
+        },
+        "Freya Low Huai Ning": {
+            "position": "Cheer I/C, PromCo Member, EleCo Member",
+            "description": "Why watch Barbie when you can watch us dance, dance the night away!"
+        },
+        "Loh Guan Yang": {
+            "position": "Cheer I/C, PromCo Member, EleCo Member",
+            "description": "Hi, I’m Guan Yang and I daresay I add the yang guang to each of your lives :)"
+        }
+    },
+    "SnR": {
+        "Brendan Lau Zhengxin": {
+            "position": "Chairperson, OHCo Attaché",
+            "description": "Hay there 👨‍🌾 I’m Brendan and am a happy member of the SnR farm :D let’s hope for a great harvest this council term and I’ll strive to put a smile on your face :)"
+        },
+        "Chen Xiaohan": {
+            "position": "Secretary-Treasurer, MAFCo Member, EleCo Member",
+            "description": "Hellooo I’m Xiaohan your SnR sec-treas (≧◡≦) ,, in my Seraphic-n-Relaxing time, I like to do ballet, play badminton or basketball,, if you need one more person for these just hmu hehe ヽ(>∀<)ノ"
+        },
+        "Joel Ho Wei Ming": {
+            "position": "NSE Attaché, O1Co Attaché",
+            "description": "🎅 Ho…ho…ho it's Joel! Your friendly neighbourhood santa claus 🎄 I'm here to bring you gifts all year round 🥳🥳🥳"
+        },
+        "Soh Jia Min": {
+            "position": "Apollo Faculty Head, MAFCo Member",
+            "description": "Hi I'm Jia Min and I'm the shortest Faculty Head ☀️☀️ Together with Junjian, Apollo's average height is the shortest. #ItIsATeamEffort"
+        },
+        "Zhang Junjian": {
             "position": "Apollo Deputy Faculty Head, O1Co Member",
-            "description": "Good morning! ☀️ I'm Jun Hao, one of two 🐮 in HCSC! Mirror mirror on the wall, whose shining power transverses them all? This luminous lad! 😎🌞 MOOOO!"
+            "description": "Hi I’m Junjian and I'm the tallest Faculty Head ☀️☀️ Because of Jia Min, Apollo's average height is the shortest. #TeamGoalzzz"
         },
-        "Koh Wei En Ezekiel": {
+        "Christiaan Tan Kok Hao": {
             "position": "Ares Faculty Head, O1Co Member",
-            "description": "What’s good horses! ⚔️I’m Ezekiel, one of the 🐴 in HCSC. Together with Sonya we definitely make up the most masculine duo!🔥 Through the mist🌫️, with a steady pace…🕳️"
+            "description": "Hey I am Christiaan and I’m the Ares Faculty Head! 🔥🔥 I look forward to serving you and treating everyone like NEIGHbours! 🐴😲"
         },
-        "Sonya Koh": {
-            "position": "Ares Deputy Faculty Head, TDCo Member",
-            "description": "What’s good horses! 😆 I’m Sonya, one of the 🐴 in HCSC and the only female Fac Head. 💁🏻‍♀️ Along with Ezekiel, we make up the most feminine Faculty, Ares❤️! 🕳️…the horse emerges, full of grace.🎀"
+        "Ee Zhao Hui": {
+            "position": "Ares Deputy Faculty Head, MAFCo Member",
+            "description": "Hi I am Zhao Hui and I'm your other Ares Faculty Head! 🔥🔥 While challenging the God of WAR is never easy, just know that we will NEIGH-ver give up!! ❤️‍🔥⚔️"
         },
-        "Mao Tianze": {
-            "position": "Artemis Faculty Head, O1Co Member",
-            "description": "Wassup pups! I'm Tianze, one of the 🐺 in HCSC. Leader of the pack, connoisseur of naps, who's ready for a howl-off?🎤"
+        "Loy Ji Xuan Kyler": {
+            "position": "Artemis Faculty Head, PromCo Member",
+            "description": "Hi I am Kyler and I'm the one that has to put up with Sarah for my council term 😒 Inhaling too long is no good - get ready to EXHALE this 🐺"
         },
-        "Song Haoran": {
-            "position": "Artemis Deputy Faculty Head, PromCo Member",
-            "description": "Wassup pups! I'm Haoran, one of the 🐺 in HCSC. Alpha of the crew, master of the snooze, who's in the mood for a moonlit groove? 🎶"
+        "Sarah Hannah Koh Shi En": {
+            "position": "Artemis Deputy Faculty Head, O1Co Member",
+            "description": "Hi I am Sarah and I’m the one that has to entertain Kyler for my council term 🙄 When life is goofy you have to adapt, so get ready to inhale THAT 💙"
         },
-        "Sun Peiyan": {
-            "position": "Athena Faculty Head, O1Co Member",
-            "description": "What’s good, AHOOD! I’m Peiyan, one of the 🦉 in HCSC… Why are there feathers growing on my body?! Oh, WAIT, can I fly now?! AHOOT! AHOOT!"
+        "Li Jiayi": {
+            "position": "Athena Faculty Head, TDCo Member",
+            "description": "Hi I’m Jiayi & I’m stuck with Yap Yu En 😞😞 but don’t worry we will help Yu make your school life more ENtertaining cuz u r A-then-a(out) of ten 😉😉 p.s I like pandas"
         },
-        "Alastair Chua Wei Jie": {
-            "position": "Athena Deputy Faculty Head, MAFCo Member",
-            "description": "What’s good, AHOOD! I’m Alastair, one of the 🦉 in HCSC… What is this weird owl doing hooting around?!"
+        "Yap Yu En": {
+            "position": "Athena Deputy Faculty Head, O1Co Member",
+            "description": "Hi I’m Jace & I’m stuck with Li Jiayi for my council term 😐 BUT I’m here to 加一 to your Hwa Chong journey and to create OwlHoot together"
         }
     },
     "WelCo": {
-        "Toh Cheung See": {
+        "Rachelle Sim Kye Yee": {
             "position": "Chairperson, MAFCo Attaché",
-            "description": "Hi I'm Cheung See and I give out bananas so we can steal the moon hehehe… I also provide welfare services 😋🥰 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+            "description": "Hello I’m Rachelle — sorry to disappoint but it’s still pronounced as “Rachel” 😅 Rest assured that my dedication to serving y’all is never-ending (just like my Duolingo streak 💯)"
         },
-        "Ng Kai Chi Abigail": {
-            "position": "Secretary-Treasurer, TDCo Member, EleCo Member",
-            "description": "Hi I’m Abigail and Cheung See accidentally used the shrink ray on me instead of on the moon 🫣🤏🌝 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+        "Faith Tan Ting Hui": {
+            "position": "Secretary-Treasurer, TDCo Member, CNYCo Member",
+            "description": "Hello I’m Faith, but unfortunately, I do not have much faith in myself 😅 live laugh love welco 🫶"
         },
-        "Lai Sin Yie": {
-            "position": "NSE Attaché, OHCo Attaché",
-            "description": "Hi I’m Sin Yie and I’m the rocket that blasts these minions to the moon 🚀🌝🤫 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+        "Chua Wei Jun": {
+            "position": "NSE Attaché, PromCo Attaché",
+            "description": "Hi I'm Wei Jun, I often sit at the Council benches to count money and feel like a main character… I also think people who sit at the benches are cool."
         },
-        "Loh Si Wing Tara": {
-            "position": "Member, OHCo Member, EleCo Member",
-            "description": "Hi I’m Tara and I dreamt about eating bananas on the moon🤤😴😋🍌🍌 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+        "Arjithaa Balaji": {
+            "position": "Member, OHCo Member, CNYCo Member",
+            "description": "Hey Hwa Chong, I am the girl with the longest hair in school… I can be the rapunzel who pulls you up 🫵🏼🫶🏼"
         },
-        "Low Shi Yang": {
-            "position": "Member, MAFCo Member, O1Co Chairperson",
-            "description": "Hi guys I’m Shi Yang and bananas motivate me to steal the moon 🤭🍌😋 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw==.  Too bad I've taken 2400 less breaths than Hui En 🤛"
+        "Emelin Neo Jiarou": {
+            "position": "Member, TDCo Chairperson, CNYCo Member",
+            "description": "Hi all I’m Emelin and I am quite short but my love for you is massive."
         },
-        "Quek Ying Ying": {
-            "position": "Member, MAFCo Member, CNYCo Member",
-            "description": "Hey, I’m Ying Ying and I go bananas🍌 for the moon🌕🌙. https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw== Maybe that’s why I’m in both Chinese related events🏮🧧🥮, because the moon is a significant symbol and also represents yin ☯️(please say you get it, yin and ying)🥹"
+        "Lee Zong Hong, Anthony": {
+            "position": "Member, OHCo Secretary-Treasurer, EleCo Member",
+            "description": "What’s up people I’m Anthony, part of the most Wel-Co-ming committee, I’m standing at a very respectable height of 158 🤩"
         },
-        "Raphael Toby Lauw": {
-            "position": "Member, PromCo Member, O1Co Member",
-            "description": "Hi I’m Toby and I enjoy eating bananas while plotting to steal the moon 🌝🌝🍌😈 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw=="
+        "Lim Chun Kai, Axel": {
+            "position": "Member, O1Co Secretary-Treasurer, MAFCo Member",
+            "description": "Hey guys I'm Axel and I strongly believe in the concept of bigger bank account🏦 🤑, better person 😉"
         },
-        "Tan Weiyan Ruson": {
-            "position": "Member, MAFCo Chairperson, EleCo Member",
-            "description": "Hi I’m Ruson and I’m on a quest to find the ultimate banana recipe while planning to steal the moon 🍌🌙😈😋 https://www.instagram.com/reel/CsYLs6jKY19/?igsh=MXJjZjJnM3R5djBocw== i also always catch someone doodling maf pubs during breaks 🎨🧐"
+        "Lua Wei An": {
+            "position": "Member, MAFCo Chairperson, O1Co Member",
+            "description": "Hello I’m Wei An and every time I get a haircut I feel like my identity is under crisis but it’s ok I will continue selling my combo meals at the welfare bench either way ❤️"
+        },
+        "Quan Wenlin": {
+            "position": "Member, PromCo Secretary-Treasurer, O1Co Member",
+            "description": "Hi I'm Wenlin and I'm here to give my Quan Bu 🫨"
         }
     }
 }
 </script>
 
 <template>
-
 <!-- hero section -->
     <section class="mt-30 pb-12">
         <h1 class="z-20 text-black lg:text-8xl w-full text-center">50TH STUDENTS' COUNCIL</h1>
@@ -258,16 +284,14 @@ const councillors = {
     </section>
 
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
-
+    
     <section class="w-full py-15 px-6">
         <div class="w-full">
-            <h2 class="!text-left centered-text-block">A message from the 50th...</h2>
+            <h2 class="!text-left centered-text-block">A short message from the 50th...</h2>
             <p class="centered-text-block mt-6 ">
-                Just as the rising sun beckons a new dawn, 
-                we look forward to sunlit possibilities as we mark our Golden Jubilee milestone. 
+                Just as the rising sun beckons a new dawn, we look forward to sunlit possibilities as we mark our Golden Jubilee milestone. 
                 Embarking on HCSC’s 50th year, we pledge to embody the school’s vision, 
-                to Live with Passion and Lead with Compassion, 
-                serving Hwa Chong and her charges with unwavering spirit and honour.
+                to Live with Passion and Lead with Compassion, serving Hwa Chong and her charges with unwavering spirit and honour.
             </p>
         </div>
     </section>
@@ -278,20 +302,12 @@ const councillors = {
         <div class="w-full">
             <h2 class="centered-text-block">Our Committees</h2>
             <p class="centered-text-block mt-6">
-                The HCSC consists of the Executive Committee, 
-                the 5 Standing Committees (SC), and the 7 Working Committees (WC).
-                <br><br>Headed by the Executive Committee (ExCo), 
-                the 5 SCs work together over their 2 Council Terms to best serve the students and their needs, 
-                in their differently unique aspects. The 5 SCs consist of: 
-                the Extended Council Attaché Committee (ECACo), 
-                the Publications and Publicity Committee (PubCo), 
-                the Student Engagement and Culture Committee (SECCo), 
-                the Social and Relations Committee (SnR), 
-                and the Welfare Committee (WelCo).
-                <br><br>The 7 WCs serve to organise 7 Working Events, 
-                namely Teachers’ Day (TDCo), Mid-Autumn Festival (MAFCo), 
-                Senior Promenade (PromCo), Open House (OHCo), 
-                Orientation (O1Co), Chinese New Year (CNYCo) and Elections (EleCo). 
+                The HCSC consists of the Executive Committee, the 5 Standing Committees (SC), and the 7 Working Committees (WC).
+                <br><br>Headed by the Executive Committee (ExCo), the 5 SCs work together over their 2 Council Terms to best serve the students and their needs, in their differently unique aspects. 
+                The 5 SCs consist of: the Extended Council Attaché Committee (ECACo), the Publications and Publicity Committee (PubCo), 
+                the Student Engagement and Culture Committee (SECCo), the Social and Relations Committee (SnR), and the Welfare Committee (WelCo).
+                <br><br>The 7 WCs serve to organise 7 Working Events, namely Teachers’ Day (TDCo), Mid-Autumn Festival (MAFCo), Senior Promenade (PromCo), 
+                Open House (OHCo), Orientation (O1Co), Chinese New Year (CNYCo) and Elections (EleCo). 
                 Each WC consists of its elected Chairperson, Secretary-Treasurer, ExCo Attaché, and members.
             </p>
         </div>
@@ -302,33 +318,33 @@ const councillors = {
     <section class="py-12 px-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="/images/51st/51st_NSE.jpg" alt="">
-                    <h2 class="ml-6 font-semibold">EXCo</h2>
+                    <img class="w-full grow object-cover" src="/images/50th/50th_ExCo.jpg" alt="">
+                    <h2 class="ml-6 font-semibold">EXCO</h2>
                     <button @click="$refs.nse.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:py-3 sm:max-w-[50%] md:max-w-[30%] lg:text-sm sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="/images/51st/51st_EcaCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/50th/50th_EcaCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">ECACO</h2>
                     <button @click="$refs.ecaco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="/images/51st/51st_PubCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/50th/50th_PubCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">PUBCO</h2>
                     <button @click="$refs.pubco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="/images/51st/51st_SecCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/50th/50th_SecCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">SECCO</h2>
                     <button @click="$refs.secco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="/images/51st/51st_SnR.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/50th/50th_SnR.jpg" alt="">
                     <h2 class="ml-6 font-semibold">SNR</h2>
                     <button @click="$refs.snr.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
                 <div class="grow flex flex-col gap-6 rounded-xl overflow-hidden bg-gray-100 border-1 border-gray-200 font-poppins font-normal">
-                    <img class="w-full grow object-cover" src="/images/51st/51st_WelCo.jpg" alt="">
+                    <img class="w-full grow object-cover" src="/images/50th/50th_WelCo.jpg" alt="">
                     <h2 class="ml-6 font-semibold">WELCO</h2>
                     <button @click="$refs.welco.scrollIntoView({ behavior: 'smooth' })" class="py-6 sm:max-w-[50%] sm:py-3 md:max-w-[30%] sm:mb-6 sm:ml-6 sm:rounded-full text-white font-poppins inline-block bg-black hover:bg-hwachred transition-colors duration-300">View</button>
                 </div>
@@ -338,41 +354,44 @@ const councillors = {
     <div class="h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
 
     <!-- nse -->
-    <!-- <section ref="nse" class="pb-12 px-3">
+    <section ref="nse" class="pb-12 px-3">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="/images/51st/51st_NSE.jpg" alt="background" class="w-full h-full z-0 object-cover brightness-90">
+            <img src="/images/50th/50th_ExCo.jpg" alt="background" class="w-full h-full z-0 object-cover brightness-90">
             <h1 class="absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-3xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/33">
                 THE EXECUTIVE<br>
                 COMMITTEE<br>
-                (EXCO)
+                (ExCo)
             </h1>
         </div>
 
         <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
-                As the core body in the Executive Committee, the Non-Standing Executive Committee is responsible for 
-                steering the council direction, while pushing boundaries to lead the council to greater heights. 
-                On an individual level, the committee is committed to supporting each and every councillor to pursue their passions, 
+                The ExCo consists of the Non-Standing Executive Committee (NSE) as well as the 
+                chairpersons of each Standing Committee, and the Presidents of the Extended Councils. 
+                Each NSE member is attached to one Standing Committee and each ExCo is attached to one Working Committee. 
+                The ExCo is responsible for steering the council direction, 
+                while pushing boundaries to lead the council to greater heights. 
+                On an individual level, ExCo is committed to supporting each and every councillor to pursue their passions, 
                 and partner them in their council journey ahead.
             </p>
         </div>
 
         <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
-            <CouncilCard v-for="(data,name) in councillors['NSE']" 
+            <CouncilCard v-for="(data,name) in councillors['ExCo']" 
             :key="name" 
             :name="name" 
-            council="NSE" 
-            year="51st" 
+            council="ExCo" 
+            year="50th" 
             :position="data['position']" 
             :description="data['description']" 
             />
         </div>
-    </section> -->
+    </section>
 
     <!-- ecaco -->
-    <!-- <section ref="ecaco" class="pb-12 px-3">
+    <section ref="ecaco" class="pb-12 px-3">
         <div class="aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/50th/50th_EcaCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.3em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.4em] lg:text-8xl/25">
                 THE EXTENDED-<br>
                 COUNCIL<br>
@@ -384,10 +403,12 @@ const councillors = {
 
         <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
-                As the core body in the Executive Committee, the Non-Standing Executive Committee is responsible for 
-                steering the council direction, while pushing boundaries to lead the council to greater heights. 
-                On an individual level, the committee is committed to supporting each and every councillor to pursue their passions, 
-                and partner them in their council journey ahead.
+                The Extended Council Attaché Committee comprises 6 Councillors who serve as Presidents and attachés 
+                to the Community Involvement Programme Council, Green Council and Students' National Education Council. 
+                Each of these Presidents and attachés will serve in both the Students’ Council and their Extended Councils, 
+                acting as a bridge to promote better communication between leadership bodies. 
+                In doing so, they work to build meaningful collaborations 
+                that will create a holistic experience for the student body.
             </p>
         </div>
 
@@ -396,17 +417,17 @@ const councillors = {
             :key="name" 
             :name="name" 
             council="EcaCo" 
-            year="51st" 
+            year="50th" 
             :position="data['position']" 
             :description="data['description']" 
             />
         </div>
-    </section> -->
+    </section>
 
     <!-- pubco -->
-    <!-- <section ref="pubco" class="pb-12 px-3 ">
+    <section ref="pubco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/50th/50th_PubCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.4em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.2em] lg:text-8xl/25">
                 THE PUBLICATIONS<br>
                 AND PUBLICITY<br>
@@ -417,11 +438,12 @@ const councillors = {
 
         <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
-                Through the use of HCunite and the Council Board, the Publication and Publicity Committee 
-                publicises council events and initiatives, aiming to increase communication and transparency 
-                between the student body and the Students' Council. 
-                Moreover, our team is also dedicated to promoting a common identity for the Council and the school, 
-                while aspiring to make student life more exciting!
+                Through the use of HCUNite and the Council Board, 
+                the Publication and Publicity Committee publicises council events and initiatives, 
+                aiming to increase communication and transparency between the student body and the Students’ Council. 
+                Moreover, initiatives such as MOCH, which stands for Hwa Chong’s Own Media, 
+                are dedicated to promoting a common identity for the Council and the school, 
+                while aspiring to make student life more exciting! 
             </p>
         </div>
 
@@ -430,17 +452,17 @@ const councillors = {
             :key="name" 
             :name="name" 
             council="PubCo" 
-            year="51st" 
+            year="50th" 
             :position="data['position']" 
             :description="data['description']" 
             />
         </div>
-    </section> -->
+    </section>
 
     <!-- secco -->
-    <!-- <section ref="secco" class="pb-12 px-3 ">
+    <section ref="secco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/50th/50th_SecCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE STUDENT<br>
                 ENGAGEMENT<br>
@@ -452,12 +474,12 @@ const councillors = {
 
         <div class="px-6 py-12 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
-                By forging common experiences, the Student Engagement and Culture committee aspires to be 
-                the champion of our school's culture and identity, fostering a strong sense of belonging to the school, 
-                and keeping the Hwa Chong spirit burning bright. 
-                The committee is also the torchbearer of our school's vibrant song, dance and cheer culture, also known as SODACHE. 
-                The Student Engagement and Culture Committee works to strengthen student bonds and 
-                create memories that will last a lifetime.
+                By spearheading common experiences, 
+                the Student Engagement and Culture Committee aspires to be the champion of our school’s culture and identity, 
+                fostering a strong sense of belonging to the school, and keeping the Hwa Chong spirit burning bright. 
+                The Committee is also the torchbearer of our school’s vibrant song, dance and cheer culture, also known as SODACHE. 
+                The 50th Student Engagement and Culture Committee works to strengthen student bonds and 
+                create memories that will last a lifetime. 
             </p>
         </div>
 
@@ -466,17 +488,17 @@ const councillors = {
             :key="name" 
             :name="name" 
             council="SecCo" 
-            year="51st" 
+            year="50th" 
             :position="data['position']" 
             :description="data['description']" 
             />
         </div>
-    </section> -->
+    </section>
 
     <!-- snr -->
-    <!-- <section ref="snr" class="pb-12 px-3 ">
+    <section ref="snr" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/50th/50th_SnR.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE SOCIAL<br>
                 AND RELATIONS<br>
@@ -488,12 +510,12 @@ const councillors = {
         <div class="px-6 py-12 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Social and Relations Committee seeks to be the eyes and ears of the council, 
-                championing grassroot efforts to connect with the student body on a deeper level. 
-                Through building bonds and promoting interactions between the council and the student body, 
-                the committee strives to inculcate a unified sense of belonging to the school across all domains, 
-                promoting the #Facs1Hwach spirit that we all know and love! In addition, the committee spearheads external communications 
-                with external Councils from other institutions, 
-                laying the groundwork for prospective collaborations to further vitalise the experience of Hwa Chongians.
+                championing grassroot efforts that connect with the student body. 
+                Through building bonds and promoting interactions with the student body, 
+                the Committee strives to inculcate a unified sense of belonging to the school across all domains, 
+                ensuring that Hwa Chong continues to be an inviting home for all. 
+                In addition, the committee spearheads external communications with Councils from other institutions, 
+                laying the grounds for prospective collaborations to further vitalise the experience of students in Hwa Chong. 
             </p>
         </div>
 
@@ -502,17 +524,17 @@ const councillors = {
             :key="name" 
             :name="name" 
             council="SnR" 
-            year="51st" 
+            year="50th" 
             :position="data['position']" 
             :description="data['description']" 
             />
         </div>
-    </section> -->
+    </section>
 
     <!-- welco -->
-    <!-- <section ref="welco" class="pb-12 px-3 ">
+    <section ref="welco" class="pb-12 px-3 ">
         <div class=" aspect-3/2 rounded-xl overflow-hidden relative">
-            <img src="/images/informal_council_pic.jpg" alt="background" class="w-full h-full z-0 object-cover">
+            <img src="/images/50th/50th_WelCo.jpg" alt="background" class="w-full h-full z-0 object-cover">
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/20 lg:tracking-[0.4em] lg:text-8xl/40">
                 THE WELFARE<br>
                 COMMITTEE<br>
@@ -523,11 +545,12 @@ const councillors = {
         <div class="px-6 py-12 text-center md:text-left">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Welfare Committee champions the welfare of the student population with heart and dedication. 
-                The committee strives to promote the well being of the student population for a conducive learning environment for all HwaChongians. 
-                Through infrastructure such as the Common Room and Welfare Room, the committee reaches out to the student body, 
+                The Committee strives to promote the well being of the student population for a 
+                conducive learning environment for all Hwa Chongians. 
+                Through infrastructure such as the Common Room and Welfare Room, the Committee reaches out to the student body, 
                 rendering services and hosting activities that add vibrancy to the student experience. 
-                As the saying in the Welfare Committee goes, "Your Welfare Is Our Affair". 
-                The 51st Welfare Committee hopes to do their best to let you smile a little wider, laugh a little louder.
+                As the saying in the Welfare Committee goes, “Your Welfare Is Our Affair”. 
+                The 50th Welfare Committee hopes to do their best to make your day a little better. 
             </p>
         </div>
 
@@ -536,10 +559,10 @@ const councillors = {
             :key="name" 
             :name="name" 
             council="WelCo" 
-            year="51st" 
+            year="50th" 
             :position="data['position']" 
             :description="data['description']" 
             />
         </div>
-    </section> -->
+    </section>
 </template>

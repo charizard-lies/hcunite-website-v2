@@ -80,6 +80,16 @@ const route = useRoute()
 
 const navbarClass = computed(() => {
   switch (route.path) {
+    case '/council52':
+      return '!text-black'
+    case '/council51':
+      return '!text-black'
+    case '/council50':
+      return '!text-black'
+    case '/council49':
+      return '!text-black'
+    case '/council48':
+      return '!text-black'
     case '/sodache':
       return 'bg-transparent border-1 border-white/20 text-white'
     default:

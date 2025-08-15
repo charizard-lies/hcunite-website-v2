@@ -295,7 +295,7 @@ const councillors = {
             <h2 class="centered-text-block">Our Committees</h2>
             <p class="centered-text-block mt-6">
                 The HCSC consists of the Executive Committee, the 5 Standing Committees (SC), and the 7 Working Committees (WC).
-                Headed by the Executive Committee (ExCo), the 5 SCs work together over their 2 Council Terms to best serve the students and their needs, in their differently unique aspects. 
+                Headed by the Non-Standing Executive Committee (NSE), the 5 SCs work together over their 2 Council Terms to best serve the students and their needs, in their differently unique aspects. 
                 <br><br>The 5 SCs consist of: the Extended Council Attaché Committee (ECACo), the Publications and Publicity Committee (PubCo), the Student Engagement and Culture Committee (SECCo), 
                 the Social and Relations Committee (SnR), and the Welfare Committee (WelCo).
                 <br><br>The 7 WCs serve to organise 7 Working Events, namely Teachers’ Day (TDCo), Mid-Autumn Festival (MAFCo), Senior Promenade (PromCo), 
@@ -394,10 +394,12 @@ const councillors = {
 
         <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
-                As the core body in the Executive Committee, the Non-Standing Executive Committee is responsible for 
-                steering the council direction, while pushing boundaries to lead the council to greater heights. 
-                On an individual level, the committee is committed to supporting each and every councillor to pursue their passions, 
-                and partner them in their council journey ahead.
+                The Extended Council Attaché Committee comprises the Councillors who serve as Presidents and Vice-Presidents 
+                to the Values-In-Action Council, Green Council and Students' National Education Council. 
+                Each of these Presidents and Vice Presidents will serve in both the Students' Council and their 
+                Extended Councils, acting as a bridge to promote better communication between leadership bodies. 
+                In doing so, they work to build meaningful collaborations 
+                that will create a holistic experience for the student body.
             </p>
         </div>
 
@@ -428,8 +430,8 @@ const councillors = {
         <div class="px-6 py-12 text-justify md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
                 Through the use of HCunite and the Council Board, the Publication and Publicity Committee 
-                publicises council events and initiatives, aiming to increase communication and transparency 
-                between the student body and the Students' Council. 
+                publicises council events and initiatives, 
+                aiming to increase communication and transparency between the student body and the Students' Council. 
                 Moreover, our team is also dedicated to promoting a common identity for the Council and the school, 
                 while aspiring to make student life more exciting!
             </p>
@@ -462,10 +464,12 @@ const councillors = {
 
         <div class="px-6 py-12 text-center md:text-justify">
             <p class="max-w-[700px] mx-auto font-poppins">
-                By forging common experiences, the Student Engagement and Culture committee aspires to be 
-                the champion of our school's culture and identity, fostering a strong sense of belonging to the school, 
+                By forging common experiences, 
+                the Student Engagement and Culture committee aspires to be the champion of our school's culture and identity, 
+                fostering a strong sense of belonging to the school, 
                 and keeping the Hwa Chong spirit burning bright. 
-                The committee is also the torchbearer of our school's vibrant song, dance and cheer culture, also known as SODACHE. 
+                The committee is also the torchbearer of our school's vibrant song, dance and cheer culture, 
+                also known as SODACHE. 
                 The Student Engagement and Culture Committee works to strengthen student bonds and 
                 create memories that will last a lifetime.
             </p>
@@ -501,8 +505,8 @@ const councillors = {
                 championing grassroot efforts to connect with the student body on a deeper level. 
                 Through building bonds and promoting interactions between the council and the student body, 
                 the committee strives to inculcate a unified sense of belonging to the school across all domains, 
-                promoting the #Facs1Hwach spirit that we all know and love! In addition, the committee spearheads external communications 
-                with external Councils from other institutions, 
+                promoting the #Facs1Hwach spirit that we all know and love! 
+                In addition, the committee spearheads external communications with external Councils from other institutions, 
                 laying the groundwork for prospective collaborations to further vitalise the experience of Hwa Chongians.
             </p>
         </div>
@@ -533,8 +537,9 @@ const councillors = {
         <div class="px-6 py-12 text-center md:text-left">
             <p class="max-w-[700px] mx-auto font-poppins">
                 The Welfare Committee champions the welfare of the student population with heart and dedication. 
-                The committee strives to promote the well being of the student population for a conducive learning environment for all HwaChongians. 
-                Through infrastructure such as the Common Room and Welfare Room, the committee reaches out to the student body, 
+                The committee strives to promote the well being of the student population for a conducive learning environment for 
+                all HwaChongians. Through infrastructure such as the Common Room and Welfare Room, 
+                the committee reaches out to the student body, 
                 rendering services and hosting activities that add vibrancy to the student experience. 
                 As the saying in the Welfare Committee goes, "Your Welfare Is Our Affair". 
                 The 51st Welfare Committee hopes to do their best to let you smile a little wider, laugh a little louder.
