@@ -1,6 +1,6 @@
 <template>
     <div @click="test">
-        <img :src="imageUrl" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
+        <img :src="imageUrl" @error="onImgError" alt="" class="rounded-xl m-auto w-full aspect-3/4 object-cover">
         <div class="p-3 sm:py-6 xl:px-6 w-full m-auto font-poppins">
             <h2 class="text-2xl sm:text-3xl">{{ name }}</h2>
             <h4 class="text-lg sm:text-xl text-gray-600">{{ position }}</h4>
@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import {computed} from 'vue'
+import {computed, ref} from 'vue'
 
 const props = defineProps({
     name: String,
@@ -23,22 +23,22 @@ const props = defineProps({
 const formattedName = props.name
   .replace(/,/g, '')
   .replace(/\s+/g, '+')
+  .replace(/[,]/g, '')
+  .replace(/\//g, '')
 
-function getImageUrl() {
+const exts = ['.jpg', '.png', '.webp']
+const currentIndex = ref(0)
+
+const imageUrl = computed(() => {
   const base = `/images/${props.year}/${props.council}_${formattedName}`
-  const exts = ['.jpg', '.png', '.webp']
+  return base + exts[currentIndex.value]
+})
 
-  for (const ext of exts) {
-    try {
-      return new URL(base + ext, import.meta.url).href
-    } catch {
-      console.log(URL(base + ext, import.meta.url).href)
-    }
+function onImgError() {
+  if (currentIndex.value < exts.length - 1) {
+    currentIndex.value++
   }
-  return '' // fallback if not found
 }
-
-const imageUrl = getImageUrl()
 
 const formattedDescription = computed(() => {
   if (!props.description) return ''
