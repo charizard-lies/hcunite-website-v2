@@ -8,7 +8,7 @@ import { useRoute } from 'vue-router'
 const mobileMenuOpen = ref(false);
 const activeIndex = ref(null)
 const menuItems = [
-  { label: 'CCAS', external: true, to: 'https://google.com' },
+  { label: 'CCAS', external: true, to: 'https://hwachongccas.wixsite.com/ccawebsite' },
   { 
     label: 'STUDENTS\' COUNCIL',
     external: false,

@@ -26,8 +26,8 @@
                 </a>
             </div>
             <div class="flex flex-col flex-1 justify-left lg:px-4 min-w-0 lg:w-full" ref="textDiv">
-                <h2 class="truncate text-white text-lg sm:text-3xl lg:text-2xl">{{ data.title }}</h2>
-                <h3 class="text-base sm:text-2xl lg:text-base  text-white/80">{{ data.composer }}</h3>
+                <h2 class="truncate text-white text-lg sm:text-2xl">{{ data.title }}</h2>
+                <h3 class="text-base text-white/80">{{ data.composer }}</h3>
 
 
                 <div class="z-10 relative w-full flex flex-col transition-all duration-500 overflow-hidden" :style="{ maxHeight: expand ? paraDivScrollHeight + 'px' : '0px' }" ref="paraDiv">

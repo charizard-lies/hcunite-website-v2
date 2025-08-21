@@ -5,7 +5,7 @@
             <span @click="changeSection('dance')" class="transition-colors duration-300" :class="activeSection=='dance' ? 'text-dance':'text-gray-700'">DA</span>
             <span @click="changeSection('cheer')" class="transition-colors duration-300" :class="activeSection=='cheer' ? 'text-cheer':'text-gray-700'">CHE</span>
         </h1>
-        <p v-if="activeSection=='song'" class="text-white ml-2">Click on the image to go to the song's <a class=" underline" href="">Spotify</a></p>
+        <p class="text-white ml-2">Click on the text above to see other sections</p>
     </section>
     <section class="px-4 pb-8">
         <div v-if="activeSection=='song'" class="px-4 grid grid-cols-1 lg:grid-cols-3 lg:gap-4">
