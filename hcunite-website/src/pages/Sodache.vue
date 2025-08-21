@@ -44,82 +44,92 @@ const sodache = {
         "composer": "张栋梁",
         "description": "This song was rearranged from a Taiwanese pop song sung by 张栋梁.This song reminds Hwa Chongians that in times of loneliness, evoking the memories of the good times spent in Hwa Chong with other schoolmates will dispel all feelings of solitude.",
         "image": "/images/sodache/4.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=3QJS-dyroDU",
+        "spotify": "https://open.spotify.com/track/5QqTjc9uZ4EyBDoHN9RFWJ"
     },
     {
         "title": "只为那爱我愿",
         "composer": "Sook Neo",
         "description": "Composed by the 12th Students’ Council Song I/C, Sook Neo. The lyrics speak strongly about the love of the school and the dedication of its students. Despite any trials and tribulations, Hwa Chongians will remain strong, push on and enjoy the journey together.",
         "image": "/images/sodache/11.jpg",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=mkDO0A2B9XI",
+        "spotify": "https://open.spotify.com/track/7y4a4I5MaL7FDKqyNOtktH"
     },
     {
         "title": "情真情深",
         "composer": "Ho Han Kiat",
         "description": "Composed by the 19th Students’ Council Song I/C, Ho Han Kiat, and assisted by his batch. The captivating lyrics encapsulate a shared vision amongst the batch and express their passionate love for the school.",
         "image": "/images/sodache/10.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=tfiEGP-kjb4",
+        "spotify": "https://open.spotify.com/track/5tlSj9IG86yrC4HYxmMMpR"
     },
     {
         "title": "细水长流",
         "composer": "Sook Neo",
         "description": "Composed by one of our former Council presidents and local 新 遥 artiste, Liang Wern Fook, this song was written in the form of a flashback of the memories of one's transient schooling years and beyond, where the strongest camaraderie is founded amongst schoolmates. This heartwarming and reminiscent song serves to remind Hwa Chongians to appreciate every friend who has filled their hearts with warmth and countless unforgettable memories.",
         "image": "/images/sodache/8.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=wq1h8aKNdXo",
+        "spotify": "https://open.spotify.com/track/3a4pNFe8hXT8KlRFmdN7QV"
     },
     {
         "title": "心旅",
         "description": "A fun, light-hearted song which involves interaction between male and female students in the form of mock-jeering at each other. This song is a reflection of the short but meaningful times that every batch of students will experience in Hwa Chong. Although these times may pass, the memories and friendships forged are everlasting.",
         "image": "/images/sodache/6.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=nJ4IfuS7DFs",
+        "spotify": "https://open.spotify.com/track/0xpJNKr07b38TDSGCMHHoM"
     },
     {
         "title": "也是深情",
         "composer": "Rodney Tan",
         "description": "This is a song written by the 14th Students’ Council guitarist, Rodney Tan in 1987. During their term, the 14th Students’ Council was heavily taxed with the relocation of the Hwa Chong campus to Ngee Ann and then Bukit Batok. Yet through this experience, the students developed a greater sense of belonging towards the school. Rodney’s composition reflects his feelings towards the rapid changes and the spirit of the students.",
         "image": "/images/sodache/7.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=5aitlPE9vCo",
+        "spotify": "https://open.spotify.com/track/6fSpkk0IC0SFgZMdoJyofL"
     },
     {
         "title": "唱一首华初的歌",
         "composer": "Liang Wern Fook",
         "description": "This is one of the oldest and most significant college songs, and holds a special place in many Hwa Chongians’ hearts. It was composed by one of the former Council presidents, Mr Liang Wern Fook, after he lost an inter-school debating competition. Written during the time of the pioneering batches, this song has been favoured by students for the popular hand actions that are often used while singing the song.",
         "image": "/images/sodache/9.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=ObqhPXxp17s",
+        "spotify": "https://open.spotify.com/track/7zyBYA3ZAv693lXn9jdtTz"
     },
     {
         "title": "Never Forget",
         "composer": "Galvin Sng",
         "description": "This was the first English song to be introduced to Hwa Chong’s purely Chinese collection of college songs. Never Forget was reconstructed from a song composed by Galvin Sng (99S31), who moved on to become a teacher in the High School section. the song describes life in Hwa Chong and the friendships and memories that Hwa Chongians will never forget.",
         "image": "/images/sodache/12.jpg",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=uIEVF9caQFc",
+        "spotify": "https://open.spotify.com/track/5svaHl43FrPSm6fx0i3Kvb"
     },
     {
         "title": "Destinations",
         "composer": "Wong Yang Cheng and Natalee Ho",
         "description": "This is a sentimental and catchy song that was written by the 37th Students’ Council Song I/Cs, Wong Yang Cheng and Natalee Ho. It was originally written as a batch song for the new J1 students entering the school, describing the transitions and feelings that they will experience as they step into Hwa Chong for the first time, and how Hwa Chong will always be their home where they love and belong.",
         "image": "/images/sodache/5.png",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=VZZAZzUMLx0",
+        "spotify": "https://open.spotify.com/track/6H7T84ovBhENHLJKP2IMH4"
     },
     {
         "title": "Memories That'll Last",
         "composer": "Chong Yin Shan Charlene, Zhu Bolin, and Jacob Tseng",
         "description": "The 48th Song I/Cs collaborated with Jacob Tseng from the 48th to produce a unique SODACHE song that intends to capture the spirit of strength and unity during the pandemic they faced. With the uplifting tune and upbeat tempo, they hope that through this song, students will be spurred to stay positive and cherish the rest of their two years in school.",
         "image": "/images/sodache/13.jpeg",
-        "link": "https://www.google.com"
+        "link": "https://www.youtube.com/watch?v=70SuxHmWb38",
+        "spotify": "https://open.spotify.com/album/5EjYbHVMDuJGpFOJYNQwxx"
     },
     {
         "title": "钟声依旧",
         "composer": "Liang Wern Fook",
         "description": "This song was written in celebration of Hwa Chong’s 100th anniversary in 2019 by Liang Wern Fook to describe the emotions of alumni as they return to the campus and reminisce their memories with their teachers and friends.",
         "image": "/images/sodache/1.png",
-        "link": "https://www.google.com"
+        "spotify": "https://open.spotify.com/track/5ei9qo5Qau8bih6VKnPzVy"
     },
     {
         "title": "华中行",
         "description": "A well-liked, upbeat song that serves as a timely reminder of the various values all Hwa Chongians are expected to uphold.",
         "image": "/images/sodache/2.png",
-        "link": "https://www.google.com"
+        "spotify": "https://open.spotify.com/track/7sSIitDQ4r77MUgQKuIX0j"
     }
     ],
     "dance": [{
