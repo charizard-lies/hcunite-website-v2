@@ -367,7 +367,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['NSE']" 
             :key="name" 
             :name="name" 
@@ -403,7 +403,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['EcaCo']" 
             :key="name" 
             :name="name" 
@@ -437,7 +437,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['PubCo']" 
             :key="name" 
             :name="name" 
@@ -456,7 +456,7 @@ const councillors = {
             <h1 class="w-full absolute top-[50%] left-[52%] transform -translate-x-1/2 -translate-y-1/2 z-20 text-center font-inter font-black text-white tracking-[0.5em] text-2xl/10 sm:text-5xl/18 lg:tracking-[0.3em] lg:text-8xl/30">
                 THE STUDENT<br>
                 ENGAGEMENT<br>
-                AN CULTURE<br>
+                AND CULTURE<br>
                 COMMITTEE<br>
                 (SECCO)
             </h1>
@@ -475,7 +475,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['SecCo']" 
             :key="name" 
             :name="name" 
@@ -511,7 +511,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['SnR']" 
             :key="name" 
             :name="name" 
@@ -546,7 +546,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['WelCo']" 
             :key="name" 
             :name="name" 

@@ -294,7 +294,7 @@ const councillors = {
             </p>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['ExCo']" 
             :key="name" 
             :name="name" 
@@ -341,7 +341,7 @@ const councillors = {
             <div class="mt-12 h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['EcaCo']" 
             :key="name" 
             :name="name" 
@@ -388,7 +388,7 @@ const councillors = {
             <div class="mt-12 h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['PubCo']" 
             :key="name" 
             :name="name" 
@@ -435,7 +435,7 @@ const councillors = {
             <div class="mt-12 h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['SecCo']" 
             :key="name" 
             :name="name" 
@@ -484,7 +484,7 @@ const councillors = {
             <div class="mt-12 h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['SnR']" 
             :key="name" 
             :name="name" 
@@ -532,7 +532,7 @@ const councillors = {
             <div class="mt-12 h-px w-[60%] max-w-[900px] bg-hwachred m-auto"></div>
         </div>
 
-        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="px-3 sm:px-6 grid grid-cols-2 md:grid-cols-3 gap-8 max-w-[1000px] m-auto">
             <CouncilCard v-for="(data,name) in councillors['WelCo']" 
             :key="name" 
             :name="name" 
