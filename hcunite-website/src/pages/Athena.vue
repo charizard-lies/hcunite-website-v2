@@ -39,7 +39,7 @@
         </div>
 
         <div 
-          class="absolute bottom-12 w-full text-center text-white text-lg md:text-xl font-poppins pointer-events-none z-20 transition-all duration-500"
+          class="absolute bottom-8 lg:bottom-12 w-full text-center text-white text-base md:text-xl font-poppins pointer-events-none z-20 transition-all duration-500"
           :class="showOverlay ? 'opacity-50' : 'opacity-0'"
         >
           Tap to reveal image

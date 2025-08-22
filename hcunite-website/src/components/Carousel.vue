@@ -13,7 +13,7 @@
             </svg>
         </div>
 
-        <div ref="carousel" class="h-[80vh] flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory custom-scroll-hide py-6" @scroll.passive="updateCurrentIndex">
+        <div ref="carousel" class="flex flex-row gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory custom-scroll-hide py-6" @scroll.passive="updateCurrentIndex">
             <div class="shrink-0 w-[40%]"></div>
             <div v-for="(img, i) in cheers"
             :key="i" 

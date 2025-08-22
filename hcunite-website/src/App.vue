@@ -80,33 +80,65 @@ const route = useRoute()
 
 const navbarClass = computed(() => {
   switch (route.path) {
-    case '/council52':
-      return '!text-black'
-    case '/council51':
-      return '!text-black'
-    case '/council50':
-      return '!text-black'
-    case '/council49':
-      return '!text-black'
-    case '/council48':
-      return '!text-black'
+    case '/':
+    case '/apollo':
+    case '/ares':
+    case '/artemis':
+    case '/athena':
+      if(isAtTop.value){
+        return 'bg-transparent text-white'
+      } 
+      else{
+        return 'bg-white/75 text-black backdrop-blur-xl'
+      } 
     case '/sodache':
-      return 'bg-transparent border-1 border-white/20 text-white'
+      if(isAtTop.value){
+        return 'bg-transparent border border-white/20 text-white'
+      } 
+      else{
+        return 'bg-transparent border border-white/20 text-white backdrop-blur-xl'
+      } 
+      return 
     default:
-      return 'bg-white/75'
+      if(isAtTop.value){
+        return 'bg-transparent text-black'
+      } 
+      else{
+        return 'bg-white/50 text-black backdrop-blur-xl'
+      } 
   }
 })
 
 const logoClass = computed(() => {
   switch (route.path) {
     case '/apollo':
-      return 'text-apollo-dark hover:text-hwachred'
+      if(isAtTop.value){
+        return 'text-white hover:text-hwachred'
+      } 
+      else{
+        return 'text-apollo hover:text-hwachred'
+      } 
     case '/ares':
-      return 'text-ares hover:text-hwachred'
+      if(isAtTop.value){
+        return 'text-white hover:text-hwachred'
+      } 
+      else{
+        return 'text-ares hover:text-hwachred'
+      } 
     case '/artemis':
-      return 'text-artemis hover:text-hwachred'
+      if(isAtTop.value){
+        return 'text-white hover:text-hwachred'
+      } 
+      else{
+        return 'text-artemis hover:text-hwachred'
+      } 
     case '/athena':
-      return 'text-athena hover:text-hwachred'
+      if(isAtTop.value){
+        return 'text-white hover:text-hwachred'
+      } 
+      else{
+        return 'text-athena hover:text-hwachred'
+      } 
     case '/sodache':
       switch (sodacheStore.activeSection) {
         case 'song':
@@ -176,7 +208,7 @@ const bgClass = computed(() => {
       <!-- inner box -->
       <div 
       class="w-full flex flex-row justify-between m-auto px-5 py-3 rounded-xl transition-all duration-500" 
-      :class="navbarClass + (isAtTop? ' text-white !bg-transparent': ' backdrop-blur-xl')">
+      :class="navbarClass">
         <!-- logo -->
         <div class="text-2xl font-inter font-black lg:text-4xl transition-colors duration-300" :class="logoClass"><router-link to="/">HCUNITE</router-link></div>
         <!-- headers -->
@@ -194,7 +226,7 @@ const bgClass = computed(() => {
     </nav>
 
     <!-- mobilee fullscreen menu -->
-    <div v-if="mobileMenuOpen" class="fixed top-0 left-0 bg-hwachred-dark size-full  z-50 flex flex-col items-center justify-center text-xl">
+    <div :class="mobileMenuOpen? 'translate-x-0': 'translate-x-full'" class="fixed top-0 left-0 bg-hwachred-dark size-full  z-50 flex flex-col items-center justify-center text-xl transition-transform duration-500">
       <button @click="mobileMenuOpen = !mobileMenuOpen" class="absolute top-10 right-10">
         <svg fill="white" class="size-5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775" xml:space="preserve">
         <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55

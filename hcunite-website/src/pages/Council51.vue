@@ -242,10 +242,8 @@ const councillors = {
 
 <!-- hero section -->
     <section class="mt-30 pb-12">
-        <h1 class="z-20 text-black lg:text-8xl w-full text-center">51ST STUDENTS' COUNCIL</h1>
-        <div class="w-full h-screen relative">
-            <img src="/images/51st/51st_HCSC.jpg" alt="background" class="z-0 absolute w-full h-full object-cover">
-        </div>
+        <h1 class="z-20 text-black lg:text-8xl w-full text-center p-4">51ST STUDENTS' COUNCIL</h1>
+        <img src="/images/51st/51st_HCSC.jpg" alt="background" class="z-0 w-full">
         <div class="p-6">
             <p class="centered-text-block">
                 (FROM LEFT TO RIGHT)

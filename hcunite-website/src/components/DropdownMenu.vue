@@ -1,10 +1,10 @@
 <template>
   <div class="relative group">
-    <a v-if="item.external" :href="item.to" target="_blank" rel="noopener" class="m-auto h-full flex items-center font-inter font-normal text-md xl:text-lg 2xl:text-xl hover:text-hwachred">
+    <a v-if="item.external" :href="item.to" target="_blank" rel="noopener" class="m-auto h-full flex items-center font-inter font-normal text-md xl:text-lg 2xl:text-xl hover:text-hwachred transition-color duration-500">
         {{ item.label }}
     </a>
     
-    <router-link v-else :to="item.to" class="m-auto h-full flex items-center font-inter font-normal text-md xl:text-lg 2xl:text-xl hover:text-hwachred">
+    <router-link v-else :to="item.to" class="m-auto h-full flex items-center font-inter font-normal text-md xl:text-lg 2xl:text-xl hover:text-hwachred transition-color duration-500">
         {{ item.label }}
     </router-link>
     <!-- dropdown -->
