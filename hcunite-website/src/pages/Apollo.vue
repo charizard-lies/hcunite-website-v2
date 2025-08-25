@@ -106,8 +106,8 @@ const events = [
   {
     name: 'ORIENTATION',
     images: [
-      '/images/Apollo/apollo_ori_1.JPG',
-      '/images/Apollo/apollo_ori_2.JPG',
+      '/images/Apollo/apollo_ori_1.jpg',
+      '/images/Apollo/apollo_ori_2.jpg',
       '/images/Apollo/apollo_ori_3.jpg',
     ],
     text:[
